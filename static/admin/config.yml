@@ -1,0 +1,135 @@
+backend:
+  name: gitlab
+  repo: daywednes/gatsbyjs_harmony
+  branch: nettify-cms
+
+media_folder: static/images
+public_folder: images
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/pages/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Banner", name: "banner", widget: "image"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
+
+  - name: "team"
+    label: "Member"
+    folder: "src/pages/team"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "team-member"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Title", name: "title", widget: "text"}
+      - {label: "Avatar", name: "avatar", widget: "image"}
+      - {label: "Desc", name: "desc", widget: list, fields: [{label: Text, name: text, widget: text}]}
+      - {label: "Linkedin", name: "linkedin", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+
+  - name: "advisor"
+    label: "Advisor"
+    folder: "src/pages/advisor"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "advisor-member"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Avatar", name: "avatar", widget: "image"}
+      - {label: "Desc", name: "desc", widget: list, fields: [{label: Text, name: text, widget: text}]}
+      - {label: "Linkedin", name: "linkedin", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+
+  - name: "faq"
+    identifier_field: "question"
+    label: "FAQ"
+    folder: "src/pages/technology/faqs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Question", name: "question", widget: "string"}
+      - {label: "Answer", name: "answer", widget: "string"}
+      - {label: "Order", name: "order", widget: "number", valueType: "int"}
+
+  - name: "investor"
+    label: "Investor"
+    folder: "src/pages/investor"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "investor-member"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Logo", name: "logo", widget: "image"}
+      - {label: "Web", name: "web", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+
+  - name: "partner"
+    label: "Partner"
+    folder: "src/pages/partner"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "partner-member"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Feature", name: "feature", widget: "string"}
+      - {label: "Logo", name: "logo", widget: "image"}
+      - {label: "web", name: "web", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/pages/technology/index.md"
+        label: "Technology"
+        name: "Technology"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "technology-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: Description, name: description, widget: text}
+          - {label: Content, name: content, widget: list, fields: [{label: Image, name: image, widget: image},{label: Title, name: title, widget: string},{label: Text, name: text, widget: text}]}
+
+      - file: "src/pages/careers/index.md"
+        label: "Careers"
+        name: "Careers"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "careers-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: Description, name: description, widget: text}
+          - {label: Joblink, name: joblink, widget: string}
+          - {label: Content, name: content, widget: list, fields: [{label: Image, name: image, widget: image},{label: Title, name: title, widget: string},{label: Text, name: text, widget: text}]}
+          - {label: Footer_title, name: footer_title, widget: string}
+          - {label: Footer_text, name: footer_text, widget: text}
+
+      - file: "src/pages/partners/index.md"
+        label: "Partners"
+        name: "Partners"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "partners-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: Content, name: content, widget: list, fields: [{label: Text, name: text, widget: text}]}
+
+      - file: "src/pages/index.md"
+        label: "Home Page"
+        name: "index"
+        fields:
+          - {label: Template Key, name: templateKey, widget: hidden, default: index-page}
+          - {label: Roadmap, name: roadmap, widget: object, fields: [{label: Image, name: image, widget: image}]}
+          - { label: Decentralization, 
+            name: decentralization, 
+            widget: object, 
+            fields: [
+              {label: Heading, name: heading, widget: string},
+              {label: Description, name: description, widget: list, fields: [{label: Segment, name: segment, widget: text}]}, 
+              {label: Content, name: content, widget: list, fields: 
+                [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: string}]}]}
+          - {label: Latest_Updates, name: latest_updates, widget: list, fields: [{label: Title, name: title, widget: text}]}
+          - {label: Conversation, name: conversation, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Title, name: title , widget: string},{label: Description, name: description, widget: text},{label: Link, name: link, widget: string}]}

@@ -1,0 +1,54 @@
+.our-team-description{margin: 50px 0 100px;}
+.our-team-description h4{color:#758796}
+.our-team-description .first-line{font-weight: 600;line-height: 50px;}
+.members{margin-top:50px;display: table;}
+.members-row{margin-bottom: 50px;}
+.member{width: 25%;text-align: center;display: inline-block;padding: 0 20px 20px;vertical-align: top;margin-bottom: 50px;}
+.member-image{filter: grayscale(100%);-webkit-filter: grayscale(100%); border-radius: 50%;height: 200px;width: 200px;margin-bottom: 20px;
+    transition-property: -moz-filter, -ms-filter, -o-filter, -webkit-filter, filter; transition:all 0.5s ease;}
+.member h3{transition:all 0.5s ease;margin-bottom: 10px;}
+.member:hover .member-image,.member:hover h3{filter: unset;-webkit-filter:unset;transform: scale(1.1);}
+.section__out-team,.section__investors{background-color: #f5f8fa;}
+.roadmap-image{width: 1154px;max-width: 100%;margin: 20px auto;display: block;}
+.investors,.partners{display: table;width: 100%;}
+.investor{display: inline-block;width: 25%;text-align: center;padding: 30px 40px 60px;vertical-align: middle;}
+.partner{display: inline-block;width: 25%;text-align: center;padding: 30px 10px 60px;vertical-align: top;}
+.investor img,.partner img{max-width: 200px;max-height: 130px;-webkit-filter: grayscale(100%);filter: grayscale(100%);transition-property: -moz-filter, -ms-filter, -o-filter, -webkit-filter, filter; transition:all 0.5s ease;}
+.investor:hover img,.partner:hover img{filter: unset;-webkit-filter:unset;transform: scale(1.1);}
+.investors-row,.partners-row{display: table-row;text-align: center;}
+.btc12-logo{height: 95px;}
+.partner-img{height: 150px;}
+/* .harmony-signup{position: relative;} */
+.harmony-signup input[type="email"]{border: none;border-radius: 27px;font-size: 16px;font-weight: 300;height: 56px;outline: none;padding: 0 160px 0 23px;width: 100%;}
+.harmony-signup .input-border{background-image:linear-gradient(77deg, #03b0e8, #26cad9,#37d6d2,#4de6c8,#4de6c8,#4de6c8);display: block;padding: 2px;border-radius: 28px;}
+.harmony-signup .button{-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;border-radius: 23px;font-family: Nunito,Helvetica,arial,sans-serif;
+    font-stretch: normal;font-style: normal;font-weight: 600;outline: none;padding: 12px 25px; text-align: center;
+    -webkit-transition: background-color .24s ease-in-out,color .24s ease-in-out,opacity .24s ease-in-out,border .24s ease-in-out;
+    transition: background-color .24s ease-in-out,color .24s ease-in-out,opacity .24s ease-in-out,border .24s ease-in-out;
+    font-size: 16px;font-size: parseint(16px)/10rem;background-color: #00aee9;border: 0;border-radius: 27px;color: #fff;height: 60px;padding: 0 25px;position: absolute;right: 0;top: 0;}
+.hero-signup-text{margin: 40px 0 15px;}
+.width-relative{position: relative;}
+.section__latest-update .harmony-signup{max-width: 600px;margin: 50px auto;}
+.section__latest-update .harmony-signup .input-border{background:#00aee9;}
+.section__latest-update h3{color:#FFF;}
+.section__latest-update .harmony-signup .button{height: 56px;}
+.section__latest-update{background-image:linear-gradient(77deg, #03b0e8, #26cad9,#37d6d2,#4de6c8,#4de6c8,#4de6c8);}
+.hero-form .error{position: absolute;color: red;font-weight: bold;left: 10px;bottom: -22px;font-size: 15px;}
+label.error{background: #6B0505;font-size: 15px;font-weight: 600;margin: 10px 0px;display: block;padding: 5px 10px;color: #FFF;border-radius: 13px;}
+
+/* responsive [start] */
+    @media only screen and (max-width: 1023px){
+        .hero .scroll-trigger{bottom: 0;}
+        .member,.investor,.partner{width: 33%;}
+        .investor img, .partner img{max-width: 150px;}
+        .members,.investors, .partners{text-align: center;}
+    }
+
+    @media only screen and (max-width: 800px){
+        .member,.investor,.partner{width: 50%;}
+    }
+
+    @media only screen and (max-width: 600px){
+        .member{width: 100%;}
+    }
+/* responsive [start] */
