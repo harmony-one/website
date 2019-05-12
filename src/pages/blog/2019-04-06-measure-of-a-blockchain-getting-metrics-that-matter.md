@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
 title: 'Measure of a blockchain: getting metrics that matter'
-date: 2019-04-06T07:30:17.571Z
-banner: '/images/uploaded/banners/0-k6kmecycm5xal3l7png_1553600109.png'
+banner: /images/uploaded/banners/0-k6kmecycm5xal3l7png_1553600109.png
+date: 2018-08-29T07:30:00.000Z
 tags:
   - harmony
 ---
