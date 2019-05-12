@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
 title: Meet The Harmony Team
-date: 2019-04-06T07:15:10.771Z
-banner: '/images/uploaded/banners/0-6shjk7pzslxnyo5opng_1553626981.png'
+banner: /images/uploaded/banners/0-6shjk7pzslxnyo5opng_1553626981.png
+date: 2018-11-14T08:15:00.000Z
 tags:
   - harmony
 ---
@@ -22,11 +22,11 @@ After raising a $18M round earlier this year, Harmony is recruiting Rust/Go lang
 
 ### Read below to discover which of our team members achieved the following:
 
-1.  Founded a company whose product reached customers in 70 countries.
-2.  Became a champion at the USA Computing Olympiad Open.
-3.  Published 10 academic papers.
-4.  Earned a Rhodes scholarship.
-5.  Holds patents on optimizing large-scale datacenter networks.
+1. Founded a company whose product reached customers in 70 countries.
+2. Became a champion at the USA Computing Olympiad Open.
+3. Published 10 academic papers.
+4. Earned a Rhodes scholarship.
+5. Holds patents on optimizing large-scale datacenter networks.
 
 ### Stephen Tse
 
