@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
 title: 'Launching Testnet & Staking Nodes, February Update'
-date: 2019-04-06T04:06:41.703Z
-banner: '/images/uploaded/banners/0-8-hyutctqgyr9hhfjpg_1553682316.jpg'
+banner: /images/uploaded/banners/0-8-hyutctqgyr9hhfjpg_1553682316.jpg
+date: 2019-02-16T05:06:00.000Z
 tags:
   - harmony
 ---
