@@ -6,15 +6,19 @@ date: 2019-03-15T06:51:00.000Z
 tags:
   - harmony
 ---
+_Originally published on_ [_Medium_](https://medium.com/harmony-one/introducing-harmony-token-model-1m-tech-bounties-march-update-ec605314fbc8)_._
+
+__
+
 Dear investors and friends,
 
 We launched **Harmony Testnet 2.0**! Since our [last newsletter](https://harmony.one/201902-newsletter), we have:
 
-1.  Launched **$1M Tech Bounty** for Harmony-Ethereum Bridge and ops tooling
-2.  Simulated the Harmony Token model with **15% annualized returns** for staking
-3.  Signed up 120 new node operators, researched for IEOs & launchpads
-4.  **Won EthDenver Hackathon**, and participated in dbcrypto AMA, #Outliers Seattle, ABC Scalability panel
-5.  Upcoming: IEEE Future Technology panel, Berkeley’s ZKProof workshop
+1. Launched **$1M Tech Bounty** for Harmony-Ethereum Bridge and ops tooling
+2. Simulated the Harmony Token model with **15% annualized returns** for staking
+3. Signed up 120 new node operators, researched for IEOs & launchpads
+4. **Won EthDenver Hackathon**, and participated in dbcrypto AMA, #Outliers Seattle, ABC Scalability panel
+5. Upcoming: IEEE Future Technology panel, Berkeley’s ZKProof workshop
 
 ![](/images/uploaded/0-uz-wbuov0mlih5nijpg_1553671272.jpg)
 
@@ -24,9 +28,9 @@ _Winning Most Innovative Award; and, celebrating with ETHDenver hackers_
 
 We are excited to announce [Harmony Technical Bounty](https://medium.com/harmony-one/announcing-1million-technical-bounties-c5ea23de023d) worth $1M US dollars to be paid in Harmony tokens. Our goal is to develop **better tools and easier onboarding** for developers, partners and node operators, with bounties including:
 
-*   Harmony-Ethereum Bridge: web3.js, **Metamask**, Truffle
-*   Harmony Deployment: **Docker**, Kubernetes, firewalls
-*   Harmony Ops: Elasticsearch, **Logstash,** Kibana, Beats
+* Harmony-Ethereum Bridge: web3.js, **Metamask**, Truffle
+* Harmony Deployment: **Docker**, Kubernetes, firewalls
+* Harmony Ops: Elasticsearch, **Logstash,** Kibana, Beats
 
 See the [recent payout](https://twitter.com/harmonyprotocol/status/1105582202694164480) to our contributors! The specifications for our bounties will be posted on [harmony.one/github](https://github.com/harmony-one/) and bounty networks such as [Gitcoin](https://gitcoin.co/explorer?idx_status=open&order_by=-_val_usd_db).
 
@@ -36,10 +40,10 @@ _Whiteboarding on consensus, cross-shard txs and defense against single-shard at
 
 Harmony Testnet 2.0 is now ready, featuring:
 
-*   Instructions for [running nodes on home networks](https://github.com/harmony-one/harmony/blob/master/specs/p2p/nat-hole-punching-spike.md) with NAT Port Mapping Protocol (NAT-PMP), Port Control Protocol (PCP), and Internet Gateway Device (IGD) Control Protocol
-*   Deployment of **Solidity smart contracts**, [demo apps](https://github.com/harmony-one/demo-apps) such as lottery and asset trading
-*   Full persistence with [archival node](https://github.com/harmony-one/harmony/tree/master/cmd/archival), on-chain transaction storage
-*   Beacon-shard syncing, proof-of-concept **Verifiable Delay Function** (VDF)
+* Instructions for [running nodes on home networks](https://github.com/harmony-one/harmony/blob/master/specs/p2p/nat-hole-punching-spike.md) with NAT Port Mapping Protocol (NAT-PMP), Port Control Protocol (PCP), and Internet Gateway Device (IGD) Control Protocol
+* Deployment of **Solidity smart contracts**, [demo apps](https://github.com/harmony-one/demo-apps) such as lottery and asset trading
+* Full persistence with [archival node](https://github.com/harmony-one/harmony/tree/master/cmd/archival), on-chain transaction storage
+* Beacon-shard syncing, proof-of-concept **Verifiable Delay Function** (VDF)
 
 For our investors and contributors, we’re developing the genesis block and a custodial process. Our [key generation](https://github.com/harmony-one/key-generation) features a hybrid signature of ECDSA (**cold keys** for staking) and BLS (**hot keys** for block validation).
 
@@ -91,7 +95,7 @@ _Protocol developers at #Outliers in Seattle; and, Harvard Blockchain Summit pan
 
 Our team has been speaking to developers in Seattle, Silicon Valley, Denver, and Boston.
 
-In [#Outliers / Seattle](https://twitter.com/harmonyprotocol/status/1104102690248810496) (with MIT Media Labs & CryptoKitties), we discussed future protocol developments on a panel with Prysmatic Labs and NEO. At [Harvard Blockchain Summit](https://twitter.com/harmonyprotocol/status/1100254621652738053) and [Cryptonite](https://twitter.com/harmonyprotocol/status/1102011447494635520), we spoke about building _real_applications alongside Harbor, Bakkt and Augur.
+In [\#Outliers / Seattle](https://twitter.com/harmonyprotocol/status/1104102690248810496) (with MIT Media Labs & CryptoKitties), we discussed future protocol developments on a panel with Prysmatic Labs and NEO. At [Harvard Blockchain Summit](https://twitter.com/harmonyprotocol/status/1100254621652738053) and [Cryptonite](https://twitter.com/harmonyprotocol/status/1102011447494635520), we spoke about building _real_applications alongside Harbor, Bakkt and Augur.
 
 At ETHDenver, our cofounder Nicolas won the [Most Innovative Award](https://twitter.com/harmonyprotocol/status/1097605163303395328) at the official hackathon (packed with 2,000 buidlers) for putting together an on-chain **price oracle** called [Delfi](https://docs.google.com/presentation/d/1LJRWL8ucrwfh7olUJigO5Z9UA-av6SyDmCPZ7KpZA5A/mobilepresent?slide=id.g4cd34557aa_0_402). We competed with 120 teams and were judged by [Eric Voorhees](https://twitter.com/ErikVoorhees) at Shapeshift, [Nadav Hollander](https://twitter.com/NadavAHollander) at Dharma, [Mariano Conti](https://twitter.com/nanexcool) at MakerDAO, and author [Andreas Antonopoulos](https://twitter.com/aantonop).
 
@@ -109,5 +113,5 @@ Lastly, we need your help _staking our nodes_ and _hunting our $1M in bounties_!
 
 ![](/images/uploaded/1-cpzcvftrkgsaswh7f6ryhgpng_1553338989.png)
 
-Stephen Tse  
+Stephen Tse\
 Harmony CEO
