@@ -1,6 +1,6 @@
 ---
 templateKey: partner-member
-name: Calendar and services matching platform
+name: Timeless
 title: Harmony Blockchain Partners Timeless
 feature: Calendar and services matching platform
 logo: /images/partners/Harmony-Blockchain-Partner-Timeless.png
