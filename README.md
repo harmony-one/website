@@ -15,8 +15,8 @@ Development : static/admin/config.yml
 ```
 backend:
   name: gitlab
-  repo: username/repo_name
-  branch: branch_name
+  repo: daywednes/gatsbyjs_harmony
+  branch: master
 ```
 
 Product : static/admin/config.yml
