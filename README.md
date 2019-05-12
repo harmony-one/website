@@ -5,7 +5,7 @@ npm install -g gatsby-cli
 
 ### Development
 ```
-$ make install 
+$ make install
 $ make dev
 $ make build
 ```

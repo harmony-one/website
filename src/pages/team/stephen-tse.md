@@ -1,6 +1,6 @@
 ---
 templateKey: team-member
-name: Stephen Tse 111
+name: Stephen Tse
 title: >-
   A seasoned engineer with experience in Google, Microsoft and Apple, Stephen
   graduated with a doctoral degree in security protocols and compiler
@@ -20,4 +20,3 @@ desc:
 linkedin: 'https://www.linkedin.com/in/tsestephen/'
 date: 2018-01-30T06:46:53.772Z
 ---
-
