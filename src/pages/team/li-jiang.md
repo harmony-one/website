@@ -8,7 +8,6 @@ desc:
   - text: >
       Li holds an economics degree from Northwestern University. He is an adjunct professor​ at Northwestern's Farley Center for Entrepreneurship and Innovation. Li trains on ultimate frisbee daily and owns an amateur team that won nationally in 2017.
 linkedin: 'https://www.linkedin.com/in/lijiang2087/'
-avatar: https://harmony.one/static/images/team/li.jpg
+avatar: /images/team/li.jpg
 date: 2018-11-30T06:46:53.772
 ---
-
