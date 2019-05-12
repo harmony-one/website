@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
 title: Peer Discovery in Harmony Network
-date: 2019-04-06T07:14:14.840Z
-banner: '/images/uploaded/banners/0-b-3lq-yong-qht5lpng_1553627799.png'
+banner: /images/uploaded/banners/0-b-3lq-yong-qht5lpng_1553627799.png
+date: 2018-11-15T08:14:00.000Z
 tags:
   - harmony
 ---
