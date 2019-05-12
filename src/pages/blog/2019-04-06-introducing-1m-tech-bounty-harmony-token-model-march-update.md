@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
 title: 'Introducing $1M Tech Bounty & Harmony Token Model, March Update'
-date: 2019-04-06T06:51:47.912Z
-banner: '/images/uploaded/banners/0-uz-wbuov0mlih5nijpg_1553671364.jpg'
+banner: /images/uploaded/banners/0-uz-wbuov0mlih5nijpg_1553671364.jpg
+date: 2019-03-15T06:51:00.000Z
 tags:
   - harmony
 ---
