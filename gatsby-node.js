@@ -31,29 +31,6 @@ exports.createPages = ({ actions, graphql }) => {
 
       const posts = result.data.allMarkdownRemark.edges
 
-      var nP = 0;
-      posts.forEach(edge => {
-        if (edge.node.frontmatter.templateKey == "blog-post"){
-          nP++;
-        }
-      })
-
-      // Create blog-list pages
-      const postsPerPage = 10
-      const numPages = Math.ceil(nP / postsPerPage)
-      Array.from({ length: numPages }).forEach((_, i) => {
-        createPage({
-          path: i === 0 ? `/blog` : `/blog/${i + 1}`,
-          component: path.resolve("./src/pages/blog/index.js"),
-          context: {
-            limit: postsPerPage,
-            skip: i * postsPerPage,
-            numPages,
-            currentPage: i + 1,
-          },
-        })
-      })
-
       posts.forEach(edge => {
         const id = edge.node.id
         createPage({
@@ -90,6 +67,29 @@ exports.createPages = ({ actions, graphql }) => {
           component: path.resolve(`src/templates/tags.js`),
           context: {
             tag,
+          },
+        })
+      })
+
+      var nP = 0;
+      posts.forEach(edge => {
+        if (edge.node.frontmatter.templateKey == "blog-post"){
+          nP++;
+        }
+      })
+
+      // Create blog-list pages
+      const postsPerPage = 10
+      const numPages = Math.ceil(nP / postsPerPage)
+      Array.from({ length: numPages }).forEach((_, i) => {
+        createPage({
+          path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+          component: path.resolve("./src/pages/blog/blog-list.js"),
+          context: {
+            limit: postsPerPage,
+            skip: i * postsPerPage,
+            numPages,
+            currentPage: i + 1,
           },
         })
       })

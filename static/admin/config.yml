@@ -1,7 +1,6 @@
 backend:
-  name: gitlab
-  repo: daywednes/gatsbyjs_harmony
-  branch: nettify-cms
+  name: git-gateway
+  branch: master
 
 media_folder: static/images
 public_folder: images
@@ -58,6 +57,22 @@ collections:
       - {label: "Question", name: "question", widget: "string"}
       - {label: "Answer", name: "answer", widget: "string"}
       - {label: "Order", name: "order", widget: "number", valueType: "int"}
+
+  - name: "roadmap"
+    identifier_field: "title"
+    label: "Roadmap"
+    folder: "src/pages/technology/roadmap"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - label: "Items"
+        name: "items"
+        widget: "list"
+        fields:
+        - {label: Name, name: name, widget: "string"}
+        - {label: 'Is Active', name: isActive, widget: "boolean"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
 
   - name: "investor"
     label: "Investor"

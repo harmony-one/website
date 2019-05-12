@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import FAQRoll from '../components/FAQRoll'
+import Roadmap from '../components/Roadmap'
 
 export const TechnologyPageTemplate = ({ 
   title, 
@@ -41,67 +42,7 @@ export const TechnologyPageTemplate = ({
         </div>
       </section>
 
-      <section className="section__timeline" id="timeline">
-        <div className="container">
-          <div className="timeline">
-            <div id="timeline-catcher" />
-            <div className="timeline__top">
-              <h2 className="timeline__title">Roadmap</h2>
-              <div className="timeline__headers">
-                <p className="timeline__header  timeline-links">2018 Q2</p>
-                <p className="timeline__header active timeline-links">2018 Q3 &amp; Q4</p>
-                <p className="timeline__header  timeline-links">2019</p>
-              </div>
-            </div>
-            <div className="timeline__relative-container">
-              <div className="timeline__content ">
-                <div className="timeline__content-item-container">
-                  <img alt="" src="/images/icons/check-icon.svg " />
-                  <p className="timeline__content-item">Whitepaper</p>
-                </div>
-                <div className="timeline__content-item-container">
-                  <img alt="" src="/images/icons/check-icon.svg " />
-                  <p className="timeline__content-item">Founding Team</p>
-                </div>
-                <div className="timeline__content-item-container">
-                  <img alt="" src="/images/icons/check-icon.svg " />
-                  <p className="timeline__content-item">Seed funding</p>
-                </div>
-              </div>
-              <div className="timeline__content active">
-                <div className="timeline__content-item-container">
-                  <img alt="" src="/images/icons/check-icon.svg " />
-                  <p className="timeline__content-item">Public benchmark: 10k tps on 10k nodes</p>
-                </div>
-                <div className="timeline__content-item-container">
-                  <img alt="" src="/images/icons/check-icon.svg " />
-                  <p className="timeline__content-item">Asia Events &amp; Community Development</p>
-                </div>
-                <div className="timeline__content-item-container">
-                  <img alt="" src="/images/icons/check-incomplete.svg " />
-                  <p className="timeline__content-item">Open source, Testnet and Demo Applications</p>
-                </div>
-              </div>
-              <div className="timeline__content ">
-                <div className="timeline__content-item-container">
-
-                  <img alt="" src="/images/icons/check-incomplete.svg " />
-                  <p className="timeline__content-item">Smart contract</p>
-                </div>
-                <div className="timeline__content-item-container">
-                  <img alt="" src="/images/icons/check-incomplete.svg " />
-                  <p className="timeline__content-item">Developer Programs</p>
-                </div>
-                <div className="timeline__content-item-container">
-                  <img alt="" src="/images/icons/check-incomplete.svg " />
-                  <p className="timeline__content-item">Mainnet Launch</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <Roadmap />
       <FAQRoll />
 
       <div className="whitepaper-fixed-mobile" style={{ position: 'fixed' }}>

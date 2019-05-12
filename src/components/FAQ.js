@@ -7,7 +7,7 @@ const FAQ = class extends React.Component {
     this.state = {
       active: false,
       question: "",
-      answer: "Harmony is an open infrastructure for 10B people in the future. Harmony builds a high-performance consensus platform that will enable decentralized economies for everyone.",
+      answer: "",
       faqClass: "faq"
     };
 
@@ -20,12 +20,12 @@ const FAQ = class extends React.Component {
       return this.setState({ faqClass: "faq expanded" })
     return this.setState({ faqClass: "faq" })
   }
+
   render() {
     return (
       <div className={this.state.faqClass} onClick={this.downArrowHandler}>
         <div className="question">
           <h4 className="text--bold">{this.props.question}</h4>
-          {/*?xml version="1.0" encoding="UTF-8"?*/}
           <svg className="arrow" width="24px" height="13px" viewBox="0 0 24 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
             <g id="Design" stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
               <g id="Technologyh-Desktop-R1" transform="translate(-1118.000000, -2923.000000)" fill="#1B295E">
@@ -45,7 +45,5 @@ const FAQ = class extends React.Component {
     );
   }
 };
-
-
 
 export default FAQ;
