@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
 title: Survey on Blockchain Testnets
-date: 2019-04-06T07:19:14.580Z
-banner: '/images/uploaded/banners/1-worytav2spubn0-0s58p4wpng_1553625799.png'
+banner: /images/uploaded/banners/1-worytav2spubn0-0s58p4wpng_1553625799.png
+date: 2018-11-02T07:19:00.000Z
 tags:
   - harmony
 ---
