@@ -14,10 +14,6 @@ Here’s an overview of Harmony’s progress in the last 12 months towards an or
 
 For more, see Harmony Annual Letter and monthly Harmony Newsletter.
 
-
-
-![](/images/hmy-one.png)
-
 Founding team of 7 in Silicon Valley, all engineers, full time & on site since 2018/06, security Penn PhD, Stanford/CMU AI, Havard MBA, 4 ex-Google/Apple
 
 Core team of 12 (full time & on site), math PhD, 3 Amazon infra engineers
@@ -27,10 +23,6 @@ Culture & values, “Open Consensus for 10B” brand, organic ex-Googler communi
 Extended team of 36: 5 community leads, 7 content strategists, 2 reward organizers
 
 By CEO: annual letter, 2019 roadmap, 12 newsletters, pitch deck, SFBW talk
-
-
-
-
 
 Community & Media
 
@@ -44,8 +36,6 @@ Channels: 11k telegram, 6k email, 3k twitter, 1k wechat, 9 translations
 
 Asia tours: SZ/BJ 2018Q1, BJ/SH 2018Q3, Binance SG/VN 2019Q1, BJ/KR 2019Q2
 
-
-
 Development & Technology
 
 Open source & 3 testnets since 2019/01, 16 contributors, 2.8k commits, 113 stars
@@ -55,10 +45,6 @@ Strong ETH 2.0 contender: state sharding & secure PoS (300 signups for open node
 resharding w/ network randomness, optimal cross-shard routing, rateless erasure code
 
 Open Platform for Data Sharing help business form data consortia / credit agencies
-
-
-
-
 
 Partners & Tokens
 
@@ -70,10 +56,6 @@ Token model: 34.3% ecosys, 26.4% protocol dev, 22.4% seed investors, 16.9% team
 
 Team tokens vesting 4 years & unlocking from 2020
 
-
-
-
-
 Progress & Roadmap
 
 2018/Q2: $18M seed (Qtum 帅初, UVA 李江, Lemniscap), 10k tx/sec & 10k nodes benchmark
@@ -81,10 +63,6 @@ Progress & Roadmap
 2018/Q3: branding, 118k tx/sec & 41k nodes benchmark, research roadmap, china tour
 
 2018/Q4: 1.3-sec block propagation benchmark, SFBW talk, neuroscience research
-
-
-
-
 
 2019/01: devnet, open source, whitepaper 2.0, discourse forum, community badges
 
@@ -96,15 +74,17 @@ Progress & Roadmap
 
 2019/05: game of stakes, validator calls (15% annual return, 6% inflation), consensus nyc
 
-
-
-
-
 2019/Q2: Lottery/puzzle demos, cross-shard communication, throttled mainnet launch
 
 2019/Q3: Kademlia routing, rateless erasure code, fast state sync, WASM, full mainnet launch
 
 2019/Q4: Porting zero-knowledge proof dApps, production services for partners, ops/monitor
+
+
+
+![](/images/hmy-one.png)
+
+
 
 Harmony Team (with car plate “HMY ONE”) in Silicon Valley
 
