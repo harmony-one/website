@@ -25,11 +25,11 @@ const EmailForm = class extends React.Component {
             <div id="mc_embed_signup_scroll" className="width-relative">
                 <div className="mc-field-group width-relative">
                     { this.state.border ?
-                        <span class="input-border">
-                            <input type="email" defaultValue name="EMAIL" className="required email" id="mce-EMAIL" placeholder="Your email" required value={this.state.inputValue} onChange={this.updateInputValue}/>
+                        <span className="input-border">
+                            <input type="email" name="EMAIL" className="required email" id="mce-EMAIL" placeholder="Your email" required value={this.state.inputValue} onChange={this.updateInputValue}/>
                         </span> 
                         :
-                        <input type="email" defaultValue name="EMAIL" className="required email" id="mce-EMAIL" placeholder="Your email" required value={this.state.inputValue} onChange={this.updateInputValue}/> 
+                        <input type="email" name="EMAIL" className="required email" id="mce-EMAIL" placeholder="Your email" required value={this.state.inputValue} onChange={this.updateInputValue}/> 
                     }
                 </div>
                 <div id="mce-responses" className="clear">

@@ -26,7 +26,9 @@ export const PartnersPageTemplate = ({
           <div className="container">
             <div className="partnerform">
               <div className="partnerform__content">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeJo1VMo9B6KJeLaV3uR_PnWWICrsi1QARNl7rGUop_uhk9kQ/viewform?embedded=true" width="100%" height={1412} frameBorder={0} marginHeight={0} marginWidth={0}>Loading...</iframe> 
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeJo1VMo9B6KJeLaV3uR_PnWWICrsi1QARNl7rGUop_uhk9kQ/viewform?embedded=true" width="100%" height={1412} frameBorder={0} marginHeight={0} marginWidth={0} title=
+                
+                "Partner Form">Loading...</iframe> 
               </div>
             </div>
           </div>

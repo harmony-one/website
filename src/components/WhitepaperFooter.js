@@ -7,7 +7,7 @@ const WhitepaperFooter = class extends React.Component {
             <a href="/pdf/whitepaper.pdf" className="outline button" target="" data-g-event="hero" data-g-label="Whitepaper" data-g-action="clicked">
               <span>Onepager</span>
             </a>
-            <a><span>&nbsp;&nbsp;&nbsp;</span></a>
+            <span>&nbsp;&nbsp;&nbsp;</span>
             <a href="/pdf/whitepaper.pdf" className="outline button" target="" data-g-event="hero" data-g-label="Whitepaper" data-g-action="clicked">
               <span>Whitepaper</span>
             </a>

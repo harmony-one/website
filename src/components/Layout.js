@@ -4,10 +4,6 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 
 const Layout = class extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render () {
     const link =  this.props.page  ? this.props.page : "home"
 
@@ -15,7 +11,6 @@ const Layout = class extends React.Component {
       <div>
         <Helmet>
           <html lang="en" />
-
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, height=device-height" />
           <title>

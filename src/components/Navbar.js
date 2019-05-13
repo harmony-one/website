@@ -30,6 +30,8 @@ const Navbar = class extends React.Component {
         return this.setState({ partners: 'active-page' })
       case 'blog':
         return this.setState({ blog: 'active-page' })
+      default: 
+        return
     }
   }
 
@@ -50,17 +52,12 @@ const Navbar = class extends React.Component {
     }
   }
 
-  componentWillMount() {
-
-  }
-
   formSubmitHandler() {
     if (this.state.is_open !== "") {
       this.setState({ is_open: ""})
     } else {
       this.setState({ is_open: " is_open"})
     }
-
   }
 
   render() {

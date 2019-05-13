@@ -38,7 +38,7 @@ class Roadmap extends React.Component {
   }
 
   generateContentImage(isActive) {
-    if (isActive == true) {
+    if (isActive === true) {
       return "/images/icons/check-icon.svg ";
     }
     return "/images/icons/check-incomplete.svg";
