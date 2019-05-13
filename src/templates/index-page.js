@@ -8,6 +8,7 @@ import AdvisorRoll from '../components/AdvisorRoll';
 import InvestorRoll from '../components/InvestorRoll';
 import PartnerRoll from '../components/PartnerRoll';
 import WhitepaperFooter from '../components/WhitepaperFooter';
+import EmailForm from '../components/EmailForm'; 
 
 function splitter(s) {
   var middle = Math.floor(s.length / 2);
@@ -40,22 +41,8 @@ export const IndexPageTemplate = ({
                 <h2 className="hero__title">Open Consensus<br /> for <span className="no-break">10 Billion</span> People.<br /> Harmony for One and All.</h2>
                 <p className="hero__desc subhead">Our open infrastructure is a revolutionary high-throughput, low-latency, and low-fee consensus platform designed to power decentralized economies of the future.</p>
                 <h4 className="hero-signup-text">Be the first to know on anything Harmony</h4>
-                <div id="mc_embed_signup" className="harmony-signup">
-                  <form action="https://medium.us20.list-manage.com/subscribe/post?u=13db1cd29d5fd5c3b8169108c&id=301564a525" method="post" id="mc-embedded-subscribe-form-1" name="mc-embedded-subscribe-form" className="validate" target="">
-                    <div id="mc_embed_signup_scroll" className="width-relative">
-                      <div className="mc-field-group width-relative">
-                        <span className="input-border">
-                          <input type="email" defaultValue name="EMAIL" className="required email" id="mce-EMAIL-1" placeholder="Your email" required />
-                        </span>
-                      </div>
-                      <div id="mce-responses" className="clear">
-                        <div className="response" id="mce-error-response" style={{display: 'none'}} />
-                        <div className="response" id="mce-success-response" style={{display: 'none'}} />
-                      </div>
-                      <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true"><input type="text" name="b_93b2e477d4e2dec2a336c4585_da655ebf7e" tabIndex={-1} defaultValue /></div>
-                      <div className="clear"><input className="button" type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe" /></div>
-                    </div>
-                  </form>
+                <div id="mc_embed_signup" class="harmony-signup">
+                <EmailForm border={true}/> 
                 </div>
               </div>
               <div className="hero__col">
@@ -175,19 +162,7 @@ export const IndexPageTemplate = ({
           <section className="section__latest-update">
             <h3 className="text--center">Sign up and get the latest Harmony tech updates </h3>
             <div id="mc_embed_signup" className="harmony-signup">
-              <form action="https://medium.us20.list-manage.com/subscribe/post?u=13db1cd29d5fd5c3b8169108c&id=301564a525" method="post" id="mc-embedded-subscribe-form-2" name="mc-embedded-subscribe-form" className="validate" target="">
-                <div id="mc_embed_signup_scroll" className="width-relative">
-                  <div className="mc-field-group width-relative">
-                    <input type="email" defaultValue name="EMAIL" className="required email" id="mce-EMAIL-2" placeholder="Your email" required />
-                  </div>
-                  <div id="mce-responses" className="clear">
-                    <div className="response" id="mce-error-response" style={{display: 'none'}} />
-                    <div className="response" id="mce-success-response" style={{display: 'none'}} />
-                  </div>
-                  <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true"><input type="text" name="b_93b2e477d4e2dec2a336c4585_da655ebf7e" tabIndex={-1} defaultValue /></div>
-                  <div className="clear"><input className="button" type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe" /></div>
-                </div>
-              </form>
+              <EmailForm border={false}/>
             </div>
           </section>
           <section className="section__out-team">
