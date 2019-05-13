@@ -15,7 +15,7 @@ function splitter(s) {
   var before = s.lastIndexOf(' ', middle);
   var after = s.indexOf(' ', middle + 1);
 
-  if (before == -1 || (after != -1 && middle - before >= after - middle)) {
+  if (before === -1 || (after !== -1 && middle - before >= after - middle)) {
       middle = after;
   } else {
       middle = before;
@@ -41,7 +41,7 @@ export const IndexPageTemplate = ({
               <h2 className="hero__title">Open Consensus<br /> for <span className="no-break">10 Billion</span> People.<br /> Harmony for One and All.</h2>
               <p className="hero__desc subhead">Our open infrastructure is a revolutionary high-throughput, low-latency, and low-fee consensus platform designed to power decentralized economies of the future.</p>
               <h4 className="hero-signup-text">Be the first to know on anything Harmony</h4>
-              <div id="mc_embed_signup" class="harmony-signup">
+              <div id="mc_embed_signup" className="harmony-signup">
                   <EmailForm border={true}/>
               </div>
           </div>

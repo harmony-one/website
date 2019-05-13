@@ -114,9 +114,7 @@ const Footer = class extends React.Component {
           </ul>
           <ul className="footer__nav footer__nav-legal">
             <li>  
-              <a>
                 <span>&nbsp;&nbsp;&nbsp;</span>
-              </a>
             </li>
           </ul>
         </div>

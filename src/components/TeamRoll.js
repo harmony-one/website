@@ -31,11 +31,8 @@ class TeamRoll extends React.Component {
                 </a>
               </h3>
 
-              {post.frontmatter.desc.map(item => (
-                <>
-                  <p>{item.text}</p>
-                  <br />
-                </>
+              {post.frontmatter.desc.map( (item,index) => (
+                  <div key={index}><p>{item.text}</p><br/></div>
               ))}
             </div>
           ))}

@@ -28,11 +28,11 @@ class AdvisorRoll extends React.Component {
                   <img alt="" src="/images/social/linkedin.svg" />
                 </a>
               </h3>
-              {post.frontmatter.desc.map(item => (
-                <>
+              {post.frontmatter.desc.map((item, index) => (
+                <div key={index}>
                   <p>{item.text}</p>
                   <br />
-                </>
+                </div>
               ))}
             </div>
           ))}
