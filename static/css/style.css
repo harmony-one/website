@@ -74,7 +74,7 @@ label.error{background: #6B0505;font-size: 15px;font-weight: 600;margin: 10px 0p
         -ms-flex-pack: center;
         justify-content: center;
         left: 0;
-        padding: 16px;
+        padding: 10px;
         position: fixed;
         width: 100%;
         z-index: 800;
@@ -82,5 +82,9 @@ label.error{background: #6B0505;font-size: 15px;font-weight: 600;margin: 10px 0p
 
     .header__nav-items.desktop li:not(:last-child) {
         margin-right: 60px !important;
+    }
+
+    .hero .social-icons {
+        bottom: 70px !important;
     }
 /* footer onepager & whitepaper */
