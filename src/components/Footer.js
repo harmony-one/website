@@ -99,8 +99,16 @@ const Footer = class extends React.Component {
         </div>
         <div className="footer__lower">
           <ul className="footer__nav footer__nav-legal">
-            <li>  <a href="/privacy/" className="footer__nav-item nav__legal-item footnote" data-g-event="footer" data-g-label="Privacy Policy 2019 Harmony" data-g-action="clicked">
+            <li>  
+              <a href="/privacy/" className="footer__nav-item nav__legal-item footnote" data-g-event="footer" data-g-label="Privacy Policy 2019 Harmony" data-g-action="clicked">
                 <span>Privacy Policy 2019 Harmony</span>
+              </a>
+            </li>
+          </ul>
+          <ul className="footer__nav footer__nav-legal">
+            <li>  
+              <a>
+                <span>&nbsp;&nbsp;&nbsp;</span>
               </a>
             </li>
           </ul>

@@ -145,11 +145,19 @@ const Navbar = class extends React.Component {
               <a href="https://talk.harmony.one" className="header__nav-item">
                 <span>Forum</span>
               </a>
-            </li><li id="nav-item__whitepaper" className="whitepaper-button">
+            </li>
+
+            <li id="nav-item__whitepaper" className="whitepaper-button">
+              <a href="/pdf/whitepaper.pdf" className="header__nav-item button outline" target="">
+                <span>Onepager</span>
+              </a>
+            </li>
+            <li id="nav-item__whitepaper" className="whitepaper-button">
               <a href="/pdf/whitepaper.pdf" className="header__nav-item button outline" target="">
                 <span>Whitepaper</span>
               </a>
-            </li></ul>
+            </li>
+            </ul>
         </nav>
 
       </header>

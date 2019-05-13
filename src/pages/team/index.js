@@ -1,8 +1,9 @@
 import React from 'react'
 
 import Layout from '../../components/Layout'
-import TeamDetail from '../../components/TeamDetail';
-import AdvisorsDetail from '../../components/AdvisorDetail';
+import TeamDetail from '../../components/TeamDetail'
+import AdvisorsDetail from '../../components/AdvisorDetail'
+import WhitepaperFooter from '../../components/WhitepaperFooter'
 
 export default class TeamMemberPage extends React.Component {
   render() {
@@ -10,11 +11,7 @@ export default class TeamMemberPage extends React.Component {
       <Layout page='team'>
        <div>
          <main className="main">
-          <div className="whitepaper-fixed-mobile">
-            <a href="/pdf/whitepaper.pdf" className="outline button" target="_blank" rel="noopener noreferrer" data-g-event="hero" data-g-label="Read our Whitepaper" data-g-action="clicked">
-              <span>Read our Whitepaper</span>
-            </a>
-          </div>
+         <WhitepaperFooter/>
           <div className="hero hero hero__team">
             <img alt="" src="/images/hero/hero-curve.svg " className="hero__curve" />
             <div className="hero__container container">
@@ -66,6 +63,7 @@ export default class TeamMemberPage extends React.Component {
               </div>
             </div>
           </section>
+         
         </main>
         </div>
       </Layout>

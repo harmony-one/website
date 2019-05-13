@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import FAQRoll from '../components/FAQRoll'
 import Roadmap from '../components/Roadmap'
+import WhitepaperFooter from '../components/WhitepaperFooter'
 
 export const TechnologyPageTemplate = ({ 
   title, 
@@ -44,12 +45,7 @@ export const TechnologyPageTemplate = ({
 
       <Roadmap />
       <FAQRoll />
-
-      <div className="whitepaper-fixed-mobile" style={{ position: 'fixed' }}>
-        <a href="/pdf/whitepaper.pdf" className="outline button" target="_blank" rel="noopener noreferrer" data-g-event="hero" data-g-label="Whitepaper" data-g-action="clicked">
-          <span>Whitepaper</span>
-        </a>
-      </div>
+      <WhitepaperFooter/>
     </main>
   )
 }

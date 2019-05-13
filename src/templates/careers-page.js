@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import WhitepaperFooter from '../components/WhitepaperFooter';
 
 export const CareersPageTemplate = ({ 
   title, 
@@ -62,11 +63,7 @@ export const CareersPageTemplate = ({
             </div>
           </div>
         </section>
-        <div className="whitepaper-fixed-mobile">
-          <a href="/pdf/whitepaper.pdf" className="outline button" target="_blank" rel="noopener noreferrer" data-g-event="hero" data-g-label="Whitepaper" data-g-action="clicked">
-            <span>Whitepaper</span>
-          </a>
-        </div>
+        <WhitepaperFooter/>
       </main>
     </div>
   )

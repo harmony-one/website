@@ -7,6 +7,7 @@ import TeamRoll from '../components/TeamRoll';
 import AdvisorRoll from '../components/AdvisorRoll';
 import InvestorRoll from '../components/InvestorRoll';
 import PartnerRoll from '../components/PartnerRoll';
+import WhitepaperFooter from '../components/WhitepaperFooter';
 
 function splitter(s) {
   var middle = Math.floor(s.length / 2);
@@ -68,9 +69,15 @@ export const IndexPageTemplate = ({
               </a>
             </div>
             <ul className="social-icons">
-              <li key="facebook">  <a href="/blog/" className="social__item" data-g-event="footer" data-g-label="medium" data-g-action="clicked">
+              <li key="medium">  <a href="/blog/" className="social__item" data-g-event="footer" data-g-label="medium" data-g-action="clicked">
                   <span>
                     <img alt="" src="/images/social/medium.svg " />
+                  </span>
+                </a>
+              </li>
+              <li key="discord">  <a href="https://discordapp.com/invite/rdCmBpe" className="social__item" data-g-event="footer" data-g-label="discord" data-g-action="clicked">
+                  <span>
+                    <img alt="" src="/images/social/discord.svg " />
                   </span>
                 </a>
               </li>
@@ -250,11 +257,7 @@ export const IndexPageTemplate = ({
               </div>
             </div>
           </section>
-          <div className="whitepaper-fixed-mobile">
-            <a href="/pdf/whitepaper.pdf" className="outline button" target="" data-g-event="hero" data-g-label="Whitepaper" data-g-action="clicked">
-              <span>Whitepaper</span>
-            </a>
-          </div>
+          <WhitepaperFooter/>
           </main>
 )
 
