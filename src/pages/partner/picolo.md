@@ -1,9 +1,10 @@
 ---
 templateKey: partner-member
-name: Picolo
+name: Decentralized Database
 title: Harmony Blockchain Partners Picolo
 feature: Decentralized database
-web: 'https://picolo.network/'
 logo: /images/partners/Harmony-Blockchain-Partner-Picolo.png
-date: 2018-02-27T06:46:53.772
+web: 'https://picolo.network/'
+date: 2018-02-27T06:46:53.772Z
 ---
+
