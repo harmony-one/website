@@ -1,6 +1,6 @@
 ---
 templateKey: partner-member
-name: Real asset tokenization
+name: Real Asset Tokenization
 title: Harmony Blockchain Partners hBits
 feature: Real asset tokenization
 logo: /images/partners/Harmony-Blockchain-Partner-hbits.png
