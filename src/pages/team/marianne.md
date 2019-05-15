@@ -7,7 +7,7 @@ title: >-
   is the head of Disruption Disciples Copenhagen, a top tier networks for
   executives and has worked with global brands including AUDI, Samsung, Sony,
   and m.m. on marketing and business development initiatives.
-avatar: /images/mary-website.png
+avatar: /images/team/mary.jpg
 desc:
   - text: >-
       Marianne (Mary) Dansker founded Uptimo.biz, a blockchain-focused business
@@ -22,4 +22,3 @@ desc:
 linkedin: 'https://www.linkedin.com/in/marianne-dansker/'
 date: 2019-05-15T18:43:16.634Z
 ---
-
