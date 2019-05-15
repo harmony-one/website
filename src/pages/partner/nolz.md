@@ -1,6 +1,6 @@
 ---
 templateKey: partner-member
-name: Blockchain Ad-exchange
+name: Blockchain Ad Exchange
 title: Harmony Blockchain Partners NoIZ
 feature: Ad-exchange on blockchain
 logo: /images/partners/Harmony-Blockchain-Partner-Noiz.png
