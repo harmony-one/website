@@ -109,7 +109,20 @@ export const IndexPageTemplate = ({
             data-g-action="clicked"
           >
             <span>
-              <img alt="" src="/images/social/discord.svg " />
+              <img alt="" src="/images/social/discord.svg" />
+            </span>
+          </a>
+        </li>
+        <li key="github">
+          <a
+            href="https://github.com/harmony-one/"
+            className="social__item"
+            data-g-event="footer"
+            data-g-label="github"
+            data-g-action="clicked"
+          >
+            <span>
+              <img alt="" src="/images/social/github.svg" />
             </span>
           </a>
         </li>
