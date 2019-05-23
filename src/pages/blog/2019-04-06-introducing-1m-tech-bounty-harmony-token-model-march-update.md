@@ -15,10 +15,9 @@ Dear investors and friends,
 We launched **Harmony Testnet 2.0**! Since our [last newsletter](https://harmony.one/201902-newsletter), we have:
 
 1. Launched **$1M Tech Bounty** for Harmony-Ethereum Bridge and ops tooling
-2. Simulated the Harmony Token model with **15% annualized returns** for staking
-3. Signed up 120 new node operators, researched for IEOs & launchpads
-4. **Won EthDenver Hackathon**, and participated in dbcrypto AMA, #Outliers Seattle, ABC Scalability panel
-5. Upcoming: IEEE Future Technology panel, Berkeley’s ZKProof workshop
+2. Signed up 120 new node operators, researched for IEOs & launchpads
+3. **Won EthDenver Hackathon**, and participated in dbcrypto AMA, #Outliers Seattle, ABC Scalability panel
+4. Upcoming: IEEE Future Technology panel, Berkeley’s ZKProof workshop
 
 ![](/images/uploaded/0-uz-wbuov0mlih5nijpg_1553671272.jpg)
 
@@ -47,17 +46,11 @@ Harmony Testnet 2.0 is now ready, featuring:
 
 For our investors and contributors, we’re developing the genesis block and a custodial process. Our [key generation](https://github.com/harmony-one/key-generation) features a hybrid signature of ECDSA (**cold keys** for staking) and BLS (**hot keys** for block validation).
 
-**Token Economics & Annualized Returns**
+**Token Economics** 
 
 We are simulating the _macro-economics_ of Harmony tokens in Python (to be open sourced in coming weeks). Our goal is to **secure** and **decentralize** the Harmony network by incentivizing thousands of staking nodes.
 
-Harmony nodes can earn **15% annualized returns** by joining early and bootstrapping our network. Our simulation shows that Harmony nodes turn profitable at **2.5% annual inflation**. We’re getting positive feedback from many **staking-as-a-service** companies like [Chorus.One](http://chorus.one/), [Blockdaemon](https://blockdaemon.com/) and [Staked.us](http://staked.us/) as well as our foundational nodes.
-
-![](/images/uploaded/0-ibsgavw7ggbt-szejpg_1553671519.jpg)
-
-↵
-
-_Harmony nodes earn 15% annually in early participation_
+We’re getting positive feedback from many **staking-as-a-service** companies like [Chorus.One](http://chorus.one/), [Blockdaemon](https://blockdaemon.com/) and [Staked.us](http://staked.us/) as well as our foundational nodes.
 
 Since February, we have **120 additional node signups** and 10 external nodes on our testnet. See [harmony.one/coinlist](http://harmony.one/coinlist) and [harmony.one/opentoken](http://harmony.one/opentoken) for investment details.
 
