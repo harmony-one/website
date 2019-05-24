@@ -76,7 +76,7 @@ export const IndexPageTemplate = ({
       <ul className="social-icons">
         <li key="github">
           <a
-            href="/blog/"
+            href="https://github.com/harmony-one/"
             className="social__item"
             data-g-event="footer"
             data-g-label="github"
