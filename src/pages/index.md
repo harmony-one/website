@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 roadmap:
-    image: /images/Harmony-Blockchain-Roadmap.jpg
+  image: /images/Harmony-Blockchain-Roadmap.jpg
 
 decentralization:
   heading: Decentralization at Scale
@@ -29,7 +29,7 @@ conversation:
       We have launched devnet.harmony.one (running on multiple shards) and community forum talk.harmony.one (hosting discussion on consensus & sharding).
   - image: /images/blog/article-08.jpg
     title: Harmony 2019 Roadmap
-    link: https://harmony.one/
+    link: https://harmony.one/roadmap
     description: >-
       Our roadmap aims to reinforce “Wear Your Ambitions Bright on Sleeve” with Harmony community, and to plan for the “Crypto Winter & Invincible Summer.”
   - image: /images/blog/article-03.jpg

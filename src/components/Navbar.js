@@ -107,7 +107,12 @@ const Navbar = class extends React.Component {
               </a>
             </li>
             <li id="header-nav__items__item" className="hide-md">
-              <a href="/blog/" className="header__nav-item">
+              <a
+                href="https://medium.com/harmony-one"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="header__nav-item"
+              >
                 <span>Blog</span>
               </a>
             </li>
@@ -179,7 +184,12 @@ const Navbar = class extends React.Component {
               </a>
             </li>
             <li id="nav-item__blog" className={'hide-md ' + this.state.blog}>
-              <a href="/blog/" className="header__nav-item">
+              <a
+                href="https://medium.com/harmony-one"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="header__nav-item"
+              >
                 <span>Blog</span>
               </a>
             </li>
