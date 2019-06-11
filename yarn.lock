@@ -4554,6 +4554,11 @@ es6-iterator@^2.0.1, es6-iterator@~2.0.3:
     es5-ext "^0.10.35"
     es6-symbol "^3.1.1"
 
+es6-promise@^2.0.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-2.3.0.tgz#96edb9f2fdb01995822b263dd8aadab6748181bc"
+  integrity sha1-lu258v2wGZWCKyY92KratnSBgbw=
+
 es6-promise@^3.0.2:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-3.3.1.tgz#a08cdde84ccdbf34d027a1451bc91d4bcd28a613"
@@ -4838,6 +4843,11 @@ eventemitter3@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.1.0.tgz#090b4d6cdbd645ed10bf750d4b5407942d7ba163"
   integrity sha512-ivIvhpq/Y0uSjcHDcOIccjmYjGLcP09MFGE7ysAwkAvkXfpZlC985pH2/ui64DKazbTW/4kN3yqozUxlXzI6cA==
+
+eventemitter3@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
+  integrity sha512-tvtQIeLVHjDkJYnzf2dgVMxfuSGJeM/7UCG17TT4EumTfNtF+0nebF/4zWOIkCreAbtNqhGEboB6BWrwqNaw4Q==
 
 events@^3.0.0:
   version "3.0.0"
@@ -5626,6 +5636,22 @@ gatsby-link@^2.0.16:
     "@babel/runtime" "^7.0.0"
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
+
+gatsby-plugin-google-analytics@^2.0.20:
+  version "2.0.20"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.0.20.tgz#ee8f10228a072247686a33d180d978abc574327c"
+  integrity sha512-bv2vlHdG14MIuZU0yUzGvb5Y3kL+UBY2Ii3v9PgYX7Bu7r5np/vMy82vtafkRUsrA3hcK9ipxUw8kmviurvFtQ==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+
+gatsby-plugin-netlify-cms-paths@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms-paths/-/gatsby-plugin-netlify-cms-paths-1.2.1.tgz#4f536542aa29f01d0b5985f6c2b05bfae79e1e97"
+  integrity sha512-5j9Q0WaBQphz2GspffF76ucMZBI3C1XpcnzARYOLITUEDGLlepZcdk6AWur9vRz+y/QlinzEWZrHDioor+zXYg==
+  dependencies:
+    babel-runtime "^6.26.0"
+    read-yaml-promise "^1.0.2"
+    unist-util-select "^1.5.0"
 
 gatsby-plugin-netlify-cms@^3.0.15:
   version "3.0.17"
@@ -7779,6 +7805,14 @@ js-yaml@^3.10.0, js-yaml@^3.11.0, js-yaml@^3.12.0, js-yaml@^3.12.2, js-yaml@^3.1
   version "3.13.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.0.tgz#38ee7178ac0eea2c97ff6d96fff4b18c7d8cf98e"
   integrity sha512-pZZoSxcCYco+DIKBTimr67J6Hy+EYGZDY/HCWC+iAEA9h1ByhMXAIVUXMcMFpOCxQ/xjXmPI2MkDL5HRm5eFrQ==
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^4.0.0"
+
+js-yaml@^3.8.2:
+  version "3.13.1"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
+  integrity sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
@@ -11547,6 +11581,22 @@ read-pkg@^3.0.0:
     load-json-file "^4.0.0"
     normalize-package-data "^2.3.2"
     path-type "^3.0.0"
+
+read-yaml-promise@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/read-yaml-promise/-/read-yaml-promise-1.0.2.tgz#604b6113f27f773790f4a7462d0427305ed0647b"
+  integrity sha1-YEthE/J/dzeQ9KdGLQQnMF7QZHs=
+  dependencies:
+    es6-promise "^2.0.0"
+    read-yaml "^1.0.0"
+
+read-yaml@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/read-yaml/-/read-yaml-1.1.0.tgz#0d273ac0c95be92230dc0d4c4c4f5b8960a336d6"
+  integrity sha1-DSc6wMlb6SIw3A1MTE9biWCjNtY=
+  dependencies:
+    extend-shallow "^2.0.1"
+    js-yaml "^3.8.2"
 
 read@^1.0.7:
   version "1.0.7"

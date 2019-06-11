@@ -1,4 +1,5 @@
 import React from 'react';
+import GlobalEmitter from '../utils/EventEmitter'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -44,6 +45,7 @@ const Navbar = class extends React.Component {
   }
 
   handleScroll(event) {
+    GlobalEmitter.emit('close-sticky');
     var scroll = event.srcElement.scrollingElement.scrollTop;
     if (scroll >= 50) {
       this.setState({ headerClass: 'header is-sticky inverted ' });
@@ -208,11 +210,17 @@ const Navbar = class extends React.Component {
                 <span>Onepager</span>
               </a>
             </li>
-            <li id="nav-item__whitepaper" className="whitepaper-button">
-              <a
-                href="/pdf/whitepaper.pdf"
-                className="header__nav-item button outline"
-                target=""
+            <li id="nav-item__whitepaper"
+                className="whitepaper-button">
+              <a className="header__nav-item button outline"
+                onClick={(e) => {
+                  var pos = e.target.getClientRects()[0];
+                  var left = pos.left;
+                  var top = pos.top;
+                  GlobalEmitter.emit('open-sticky', {
+                    style: {left: left, top: top}
+                  });
+                }}
               >
                 <span>Whitepaper</span>
               </a>

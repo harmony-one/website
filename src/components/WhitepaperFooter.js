@@ -1,4 +1,5 @@
 import React from 'react';
+import GlobalEmitter from '../utils/EventEmitter'
 
 const WhitepaperFooter = class extends React.Component {
   render() {
@@ -15,16 +16,30 @@ const WhitepaperFooter = class extends React.Component {
           <span>Onepager</span>
         </a>
         <span>&nbsp;&nbsp;&nbsp;</span>
-        <a
-          href="/pdf/whitepaper.pdf"
-          className="outline button"
-          target=""
-          data-g-event="hero"
-          data-g-label="Whitepaper"
-          data-g-action="clicked"
-        >
-          <span>Whitepaper</span>
-        </a>
+          <a className="header__nav-item button outline"
+             onClick={(e) => {
+                 const pos = e.target.getClientRects()[0];
+                 const left = pos.left;
+                 const top = pos.top;
+                 console.debug(`[DEBUG] eeeeeeee pos: ${pos}`, pos)
+                 GlobalEmitter.emit('open-sticky', {
+                     style: {left: left, top: top},
+                     isReversed: true
+                 });
+             }}
+          >
+              <span>Whitepaper</span>
+          </a>
+        {/*<a*/}
+        {/*  href="/pdf/whitepaper.pdf"*/}
+        {/*  className="outline button"*/}
+        {/*  target=""*/}
+        {/*  data-g-event="hero"*/}
+        {/*  data-g-label="Whitepaper"*/}
+        {/*  data-g-action="clicked"*/}
+        {/*>*/}
+        {/*  <span>Whitepaper</span>*/}
+        {/*</a>*/}
       </div>
     );
   }
