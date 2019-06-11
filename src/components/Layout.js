@@ -2,6 +2,59 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import GlobalEmitter from '../utils/EventEmitter'
+
+const StickyComponent = class extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isClose: false,
+            style: {
+                top: 0,
+                left: 0,
+            }
+        }
+    }
+
+    componentDidMount() {
+        GlobalEmitter.on('open-sticky', (opts) => {
+            let style
+            if (!opts.isReversed) {
+                style = {left: `${opts.style.left}px`, top: `${opts.style.top+50}px`}
+            } else {
+                const top = opts.style.top - 56;
+                style = {left: `${opts.style.left}px`, top: `${top}px`}
+            }
+            this.setState({
+                style: style,
+                isClose: false
+            })
+        });
+
+        GlobalEmitter.on('close-sticky', (...args) => {
+            this.setState({
+                isClose: true
+            })
+        });
+    }
+
+    render() {
+    return  (
+        !this.state.isClose ?
+        <ul className="sticky-component"
+            style={this.state.style}>
+          <li>
+            <a href="/pdf/whitepaper.pdf" target="_blank">English</a>
+          </li>
+          <li>
+            <a href="/whitepaper-kr" target="_blank">Korean</a>
+          </li>
+        </ul>
+            : null
+    )
+  }
+}
+
 
 const Layout = class extends React.Component {
   render () {
@@ -38,6 +91,7 @@ const Layout = class extends React.Component {
           <link href="/css/style.css" rel="stylesheet" />
           <link href={ "/css/composite/" + link + ".min.css"} rel="stylesheet" />
         </Helmet>
+        <StickyComponent />
         <Navbar page={link}/>
         {this.props.children}
         <Footer />
