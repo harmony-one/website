@@ -8,7 +8,7 @@ const StickyComponent = class extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isClose: false,
+            isClose: true,
             style: {
                 top: 0,
                 left: 0,
