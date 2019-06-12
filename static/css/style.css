@@ -98,7 +98,12 @@ label.error{background: #6B0505;font-size: 15px;font-weight: 600;margin: 10px 0p
     padding: 0.5rem 1rem;
     border: 1px solid lightgray;
     border-radius: 8px;
-    width: 150px;
+    width: 120px;
     text-align: center;
     box-shadow: 0 5px 10px 0 rgba(0,174,233,.15);
 }
+
+.sticky-component li {
+    padding: 0.3rem;
+}
+

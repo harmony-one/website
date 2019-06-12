@@ -49,7 +49,8 @@ const Navbar = class extends React.Component {
     var left = pos.left;
     var top = pos.top;
     GlobalEmitter.emit('open-sticky', {
-      style: {left: left, top: top}
+      style: {left: left, top: top},
+      type: 'whitepaper'
     });
   }
 
@@ -69,6 +70,16 @@ const Navbar = class extends React.Component {
     } else {
       this.setState({ is_open: ' is_open' });
     }
+  }
+
+  onClickOnOnepager(e) {
+    const pos = e.target.getClientRects()[0];
+    const left = pos.left;
+    const top = pos.top;
+
+    GlobalEmitter.emit('open-sticky', {
+      style: {left: left, top: top},
+    });
   }
 
   render() {
@@ -212,9 +223,9 @@ const Navbar = class extends React.Component {
 
             <li id="nav-item__whitepaper" className="whitepaper-button">
               <a
-                href="/images/onepager.jpeg"
-                className="header__nav-item button outline"
-                target=""
+                  className="header__nav-item button outline"
+                  onClick={this.onClickOnOnepager}
+                  onTouchMove={this.onClickOnOnepager}
               >
                 <span>Onepager</span>
               </a>
@@ -223,7 +234,7 @@ const Navbar = class extends React.Component {
                 className="whitepaper-button">
               <a className="header__nav-item button outline"
                  onClick={this.onClickWhitePaper}
-                 onTouchEnd={this.onClickWhitePaper}
+                 onTouchMove={this.onClickWhitePaper}
               >
                 <span>Whitepaper</span>
               </a>

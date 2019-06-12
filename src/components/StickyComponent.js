@@ -1,6 +1,28 @@
 import React  from 'react'
 import GlobalEmitter from '../utils/EventEmitter'
 
+const whitePapers = [
+    {
+        "title": "English",
+        "link": "/pdf/whitepaper.pdf"
+    },
+    {
+        "title": "Korean",
+        "link": "/pdf/whitepaper-kr.pdf"
+    }
+];
+
+const onepagers = [
+    {
+        "title": "English",
+        "link": "/images/onepager.jpeg"
+    },
+    {
+        "title": "Korean",
+        "link": "/pdf/onepager-kr.pdf"
+    }
+];
+
 const StickyComponent= class extends React.Component {
     constructor(props) {
         super(props);
@@ -33,16 +55,18 @@ const StickyComponent= class extends React.Component {
         GlobalEmitter.on('open-sticky', (opts) => {
             document.addEventListener('click', this.handleClickOutside, false);
             document.addEventListener('touchstart', this.handleClickOutside, false);
+            const isWhitePaper = opts.type === 'whitepaper';
             let style
             if (!opts.isReversed) {
-                style = {left: `${opts.style.left}px`, top: `${opts.style.top+50}px`}
+                style = {left: `${opts.style.left}px`, top: `${opts.style.top}px`}
             } else {
                 const top = opts.style.top - 56;
                 style = {left: `${opts.style.left}px`, top: `${top}px`}
             }
             this.setState({
                 style: style,
-                isClose: false
+                isClose: false,
+                isWhitePaper: isWhitePaper
             })
         });
 
@@ -56,17 +80,16 @@ const StickyComponent= class extends React.Component {
     }
 
     render() {
+        const values = this.state.isWhitePaper ? whitePapers : onepagers;
+
         return  (
             !this.state.isClose ?
                 <ul className="sticky-component"
                     ref={node => { this.node = node; }}
                     style={this.state.style}>
-                    <li>
-                        <a href="/pdf/whitepaper.pdf" target="_blank">English</a>
-                    </li>
-                    <li>
-                        <a href="/whitepaper-kr" target="_blank">Korean</a>
-                    </li>
+                    {values.map((value, index) => {
+                        return <li key={index}> <a href={value.link} target="_blank">{value.title}</a> </li>
+                    })}
                 </ul>
                 : null
         )
