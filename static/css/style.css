@@ -102,18 +102,3 @@ label.error{background: #6B0505;font-size: 15px;font-weight: 600;margin: 10px 0p
     text-align: center;
     box-shadow: 0 5px 10px 0 rgba(0,174,233,.15);
 }
-
-@media only screen and (max-width: 1023px){
-}
-
-@media only screen and (max-width: 800px){
-    .sticky-component {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 600px){
-    .sticky-component {
-        display: none;
-    }
-}

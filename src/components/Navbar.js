@@ -44,6 +44,15 @@ const Navbar = class extends React.Component {
     window.removeEventListener('scroll', this.handleScroll);
   }
 
+  onClickWhitePaper(e) {
+    var pos = e.target.getClientRects()[0];
+    var left = pos.left;
+    var top = pos.top;
+    GlobalEmitter.emit('open-sticky', {
+      style: {left: left, top: top}
+    });
+  }
+
   handleScroll(event) {
     GlobalEmitter.emit('close-sticky');
     var scroll = event.srcElement.scrollingElement.scrollTop;
@@ -213,14 +222,8 @@ const Navbar = class extends React.Component {
             <li id="nav-item__whitepaper"
                 className="whitepaper-button">
               <a className="header__nav-item button outline"
-                onClick={(e) => {
-                  var pos = e.target.getClientRects()[0];
-                  var left = pos.left;
-                  var top = pos.top;
-                  GlobalEmitter.emit('open-sticky', {
-                    style: {left: left, top: top}
-                  });
-                }}
+                 onClick={this.onClickWhitePaper}
+                 onTouchEnd={this.onClickWhitePaper}
               >
                 <span>Whitepaper</span>
               </a>
