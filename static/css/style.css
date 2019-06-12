@@ -107,3 +107,6 @@ label.error{background: #6B0505;font-size: 15px;font-weight: 600;margin: 10px 0p
     padding: 0.3rem;
 }
 
+.sticky-component li a {
+    font-size: 16px;
+}

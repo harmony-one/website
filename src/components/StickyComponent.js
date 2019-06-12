@@ -1,5 +1,6 @@
 import React  from 'react'
 import GlobalEmitter from '../utils/EventEmitter'
+import utils from "../utils/utils";
 
 const whitePapers = [
     {
@@ -58,9 +59,9 @@ const StickyComponent= class extends React.Component {
             const isWhitePaper = opts.type === 'whitepaper';
             let style
             if (!opts.isReversed) {
-                style = {left: `${opts.style.left}px`, top: `${opts.style.top}px`}
+                style = {left: `${opts.style.left}px`, top: `${opts.style.top + 50}px`}
             } else {
-                const top = opts.style.top - 56;
+                const top = utils.isMobile() ? opts.style.top - 65 : opts.style.top - 65;
                 style = {left: `${opts.style.left}px`, top: `${top}px`}
             }
             this.setState({
