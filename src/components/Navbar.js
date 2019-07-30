@@ -182,7 +182,7 @@ const Navbar = class extends React.Component {
             </li>
             <li id="nav-item__blog" className={'hide-md ' + this.state.blog}>
               <a
-                href="https://medium.com/harmony-one"
+                href="https://medium.com/harmony-one/latest"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="header__nav-item">
