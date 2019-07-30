@@ -1,5 +1,6 @@
 import { graphql } from 'gatsby';
 import { GoMarkGithub } from 'react-icons/go';
+import { FaYoutube } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import React from 'react';
 import AdvisorRoll from '../components/AdvisorRoll';
@@ -75,6 +76,16 @@ export const IndexPageTemplate = ({
             data-g-label="github"
             data-g-action="clicked">
             <GoMarkGithub size={24} />
+          </a>
+        </li>
+        <li key="youtube">
+          <a
+            href="https://github.com/harmony-one/"
+            className="social__item"
+            data-g-event="footer"
+            data-g-label="youtube"
+            data-g-action="clicked">
+            <FaYoutube size={24} />
           </a>
         </li>
         <li key="medium">
