@@ -1,4 +1,5 @@
 import { graphql } from 'gatsby';
+import { GoMarkGithub } from 'react-icons/go';
 import PropTypes from 'prop-types';
 import React from 'react';
 import AdvisorRoll from '../components/AdvisorRoll';
@@ -73,9 +74,7 @@ export const IndexPageTemplate = ({
             data-g-event="footer"
             data-g-label="github"
             data-g-action="clicked">
-            <span>
-              <img alt="" src="/images/social/github.svg " />
-            </span>
+            <GoMarkGithub size={24} />
           </a>
         </li>
         <li key="medium">
