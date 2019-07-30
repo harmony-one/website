@@ -231,6 +231,7 @@ export const IndexPageTemplate = ({
       </div>
     </section>
 
+    <a id="harmony_team__block" />
     <section className="section__out-team">
       <div className="container">
         <h2 className="text--center">The Harmony Team</h2>

@@ -107,7 +107,7 @@ const Navbar = class extends React.Component {
               </a>
             </li>
             <li id="header-nav__items__item" className="hide-md">
-              <a href="/team/" className="header__nav-item">
+              <a href="#harmony_team__block" className="header__nav-item">
                 <span>Team</span>
               </a>
             </li>
@@ -166,7 +166,7 @@ const Navbar = class extends React.Component {
               </a>
             </li>
             <li id="nav-item__team" className={'hide-md ' + this.state.team}>
-              <a href="/team/" className="header__nav-item">
+              <a href="#harmony_team__block" className="header__nav-item">
                 <span>Team</span>
               </a>
             </li>
