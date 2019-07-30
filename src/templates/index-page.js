@@ -30,7 +30,7 @@ export const IndexPageTemplate = ({
   roadmap_image,
   latest_updates,
   conversation,
-  decentralization
+  decentralization,
 }) => (
   <main className="main">
     <div className="hero hero__home">
@@ -43,23 +43,16 @@ export const IndexPageTemplate = ({
             <br /> Harmony for One and All.
           </h2>
           <p className="hero__desc subhead">
-            Our open infrastructure is a revolutionary high-throughput,
-            low-latency, and low-fee consensus platform designed to power
-            decentralized economies of the future.
+            Our open infrastructure is a revolutionary high-throughput, low-latency, and low-fee
+            consensus platform designed to power decentralized economies of the future.
           </p>
-          <h4 className="hero-signup-text">
-            Be the first to know on anything Harmony
-          </h4>
+          <h4 className="hero-signup-text">Be the first to know on anything Harmony</h4>
           <div id="mc_embed_signup" className="harmony-signup">
             <EmailForm border={true} />
           </div>
         </div>
         <div className="hero__col">
-          <img
-            alt=""
-            src="/images/hero/home-hero.svg "
-            className="hero__image"
-          />
+          <img alt="" src="/images/hero/home-hero.svg " className="hero__image" />
         </div>
       </div>
       <div className="container">
@@ -68,8 +61,7 @@ export const IndexPageTemplate = ({
           data-g-event="hero"
           data-g-label="features"
           data-g-action="clicked"
-          className="scroll-trigger"
-        >
+          className="scroll-trigger">
           <span className="icon-arrow-down" />
         </a>
       </div>
@@ -80,8 +72,7 @@ export const IndexPageTemplate = ({
             className="social__item"
             data-g-event="footer"
             data-g-label="github"
-            data-g-action="clicked"
-          >
+            data-g-action="clicked">
             <span>
               <img alt="" src="/images/social/github.svg " />
             </span>
@@ -93,8 +84,7 @@ export const IndexPageTemplate = ({
             className="social__item"
             data-g-event="footer"
             data-g-label="medium"
-            data-g-action="clicked"
-          >
+            data-g-action="clicked">
             <span>
               <img alt="" src="/images/social/medium.svg " />
             </span>
@@ -106,8 +96,7 @@ export const IndexPageTemplate = ({
             className="social__item"
             data-g-event="footer"
             data-g-label="discord"
-            data-g-action="clicked"
-          >
+            data-g-action="clicked">
             <span>
               <img alt="" src="/images/social/discord.svg" />
             </span>
@@ -120,8 +109,7 @@ export const IndexPageTemplate = ({
             target=""
             data-g-event="footer"
             data-g-label="instagram"
-            data-g-action="clicked"
-          >
+            data-g-action="clicked">
             <span>
               <img alt="" src="/images/social/instagram.svg " />
             </span>
@@ -134,8 +122,7 @@ export const IndexPageTemplate = ({
             target=""
             data-g-event="footer"
             data-g-label="telegram"
-            data-g-action="clicked"
-          >
+            data-g-action="clicked">
             <span>
               <img alt="" src="/images/social/telegram.svg " />
             </span>
@@ -148,8 +135,7 @@ export const IndexPageTemplate = ({
             target=""
             data-g-event="footer"
             data-g-label="linkedin"
-            data-g-action="clicked"
-          >
+            data-g-action="clicked">
             <span>
               <img alt="" src="/images/social/twitter.svg " />
             </span>
@@ -162,8 +148,7 @@ export const IndexPageTemplate = ({
             target=""
             data-g-event="footer"
             data-g-label="linkedin"
-            data-g-action="clicked"
-          >
+            data-g-action="clicked">
             <span>
               <img alt="" src="/images/social/linkedin.svg " />
             </span>
@@ -193,15 +178,11 @@ export const IndexPageTemplate = ({
     </section>
     <section className="decentralization">
       <div className="container">
-        <h3 className="text-container__title mobile text--center">
-          {decentralization.heading}
-        </h3>
+        <h3 className="text-container__title mobile text--center">{decentralization.heading}</h3>
       </div>
       <div className="container decentralization__container">
         <div className="decentralization__text text-container">
-          <h3 className="text-container__title desktop">
-            {decentralization.heading}
-          </h3>{' '}
+          <h3 className="text-container__title desktop">{decentralization.heading}</h3>{' '}
           {decentralization.description.map((item, index) => (
             <p className="text-container__text" key={index}>
               {item.segment}
@@ -213,18 +194,13 @@ export const IndexPageTemplate = ({
               className="outline button"
               data-g-event="timeline"
               data-g-label="Our Technology"
-              data-g-action="clicked"
-            >
+              data-g-action="clicked">
               <span>Our Technology</span>
             </a>
           </div>
         </div>
         <div className="decentralization__image">
-          <img
-            alt=""
-            src="/images/home-technology.svg "
-            className="tech-image"
-          />
+          <img alt="" src="/images/home-technology.svg " className="tech-image" />
         </div>
       </div>
     </section>
@@ -248,8 +224,7 @@ export const IndexPageTemplate = ({
             className="outline button"
             data-g-event="timeline"
             data-g-label="See Our Roadmap"
-            data-g-action="clicked"
-          >
+            data-g-action="clicked">
             <span>See Our Roadmap</span>
           </a>
         </div>
@@ -257,9 +232,7 @@ export const IndexPageTemplate = ({
     </section>
 
     <section className="section__latest-update">
-      <h3 className="text--center">
-        Sign up and get the latest Harmony tech updates{' '}
-      </h3>
+      <h3 className="text--center">Sign up and get the latest Harmony tech updates </h3>
       <div id="mc_embed_signup" className="harmony-signup">
         <EmailForm border={false} />
       </div>
@@ -268,13 +241,10 @@ export const IndexPageTemplate = ({
       <div className="container">
         <h2 className="text--center">The Harmony Team</h2>
         <div className="our-team-description">
-          <h4 className="text--center first-line">
-            We’re ambitiously idealistic
-          </h4>
+          <h4 className="text--center first-line">We’re ambitiously idealistic</h4>
           <h4 className="text--center">
-            That’s why we left our jobs at big companies like Google, Apple,
-            Microsoft and Amazon to create a radically fair economy through
-            blockchain.{' '}
+            That’s why we left our jobs at big companies like Google, Apple, Microsoft and Amazon to
+            create a radically fair economy through blockchain.{' '}
           </h4>
         </div>
 
@@ -293,11 +263,7 @@ export const IndexPageTemplate = ({
         <div className="our-team-description" />
         <h4 className="text--center first-line">What Harmony has been up to</h4>
       </div>
-      <img
-        src={roadmap_image}
-        alt="Harmony Roadmap 2018 - 2019"
-        className="roadmap-image"
-      />
+      <img src={roadmap_image} alt="Harmony Roadmap 2018 - 2019" className="roadmap-image" />
     </section>
     <section className="section__investors">
       <div className="container">
@@ -327,11 +293,7 @@ export const IndexPageTemplate = ({
                     <p>{item.description}</p>
                   </div>
                   <a href={item.link} target="">
-                    <img
-                      alt=""
-                      src="/images/icons/continue-icon.svg "
-                      className="blog__icon"
-                    />
+                    <img alt="" src="/images/icons/continue-icon.svg " className="blog__icon" />
                   </a>
                 </div>
               ))}
@@ -342,8 +304,7 @@ export const IndexPageTemplate = ({
               className="outline button"
               data-g-event="blog-posts"
               data-g-label="Read more on Medium"
-              data-g-action="clicked"
-            >
+              data-g-action="clicked">
               <span>Read more on Medium</span>
             </a>
           </div>
@@ -358,7 +319,7 @@ IndexPageTemplate.propTypes = {
   roadmap_image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   latest_updates: PropTypes.array,
   conversation: PropTypes.array,
-  decentralization: PropTypes.shape({})
+  decentralization: PropTypes.shape({}),
 };
 
 const IndexPage = ({ data }) => {
@@ -379,9 +340,9 @@ const IndexPage = ({ data }) => {
 IndexPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object
-    })
-  })
+      frontmatter: PropTypes.object,
+    }),
+  }),
 };
 
 export default IndexPage;
