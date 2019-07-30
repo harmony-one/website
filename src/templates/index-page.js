@@ -266,6 +266,7 @@ export const IndexPageTemplate = ({
         <InvestorRoll />
       </div>
     </section>
+    <a id="partner__block" />
     <section className="section__partnership">
       <div className="container">
         <h2 className="text--center">Harmony Partners</h2>

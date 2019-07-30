@@ -176,7 +176,7 @@ const Navbar = class extends React.Component {
               </a>
             </li>
             <li id="nav-item__partners" className={'hide-md ' + this.state.partners}>
-              <a href="/partners/" className="header__nav-item">
+              <a href="#partner__block" className="header__nav-item">
                 <span>Partners</span>
               </a>
             </li>
