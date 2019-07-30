@@ -82,7 +82,6 @@ const StickyComponent = class extends React.Component {
 
   render() {
     const values = this.state.isWhitePaper ? whitePapers : onepagers;
-
     return !this.state.isClose ? (
       <ul
         className="sticky-component"
@@ -93,10 +92,9 @@ const StickyComponent = class extends React.Component {
         {values.map((value, index) => {
           return (
             <li key={index}>
-              {' '}
               <a href={value.link} target="_blank">
                 {value.title}
-              </a>{' '}
+              </a>
             </li>
           );
         })}
