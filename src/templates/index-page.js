@@ -231,12 +231,6 @@ export const IndexPageTemplate = ({
       </div>
     </section>
 
-    <section className="section__latest-update">
-      <h3 className="text--center">Sign up and get the latest Harmony tech updates </h3>
-      <div id="mc_embed_signup" className="harmony-signup">
-        <EmailForm border={false} />
-      </div>
-    </section>
     <section className="section__out-team">
       <div className="container">
         <h2 className="text--center">The Harmony Team</h2>
