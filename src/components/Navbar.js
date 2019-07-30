@@ -1,5 +1,5 @@
 import React from 'react';
-import GlobalEmitter from '../utils/EventEmitter'
+import GlobalEmitter from '../utils/EventEmitter';
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -13,7 +13,7 @@ const Navbar = class extends React.Component {
       partners: '',
       blog: '',
       headerClass: 'header is-sticky',
-      is_open: ''
+      is_open: '',
     };
 
     this.formSubmitHandler = this.formSubmitHandler.bind(this);
@@ -49,8 +49,8 @@ const Navbar = class extends React.Component {
     var left = pos.left;
     var top = pos.top;
     GlobalEmitter.emit('open-sticky', {
-      style: {left: left, top: top},
-      type: 'whitepaper'
+      style: { left: left, top: top },
+      type: 'whitepaper',
     });
   }
 
@@ -78,17 +78,14 @@ const Navbar = class extends React.Component {
     const top = pos.top;
 
     GlobalEmitter.emit('open-sticky', {
-      style: {left: left, top: top},
+      style: { left: left, top: top },
     });
   }
 
   render() {
     if (this.state.is_open !== '') {
       return (
-        <div
-          className={'header__side-menu is-loaded is-open'}
-          onClick={this.formSubmitHandler}
-        >
+        <div className={'header__side-menu is-loaded is-open'} onClick={this.formSubmitHandler}>
           <div className="header__side-menu__logo--container">
             <div className="header__logo header__side-menu__logo">
               <a
@@ -96,13 +93,9 @@ const Navbar = class extends React.Component {
                 className="header__logo"
                 data-g-event="header"
                 data-g-label="Logo"
-                data-g-action="clicked"
-              >
+                data-g-action="clicked">
                 <span>
-                  <img
-                    alt=""
-                    src="/images/logo/harmony-logo-horizontal-full-color.svg "
-                  />
+                  <img alt="" src="/images/logo/harmony-logo-horizontal-full-color.svg " />
                 </span>
               </a>
             </div>
@@ -133,17 +126,12 @@ const Navbar = class extends React.Component {
                 href="https://medium.com/harmony-one"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="header__nav-item"
-              >
+                className="header__nav-item">
                 <span>Blog</span>
               </a>
             </li>
             <li id="header-nav__items__item" className="whitepaper-button">
-              <a
-                href="/pdf/whitepaper.pdf"
-                className="header__nav-item button outline"
-                target=""
-              >
+              <a href="/pdf/whitepaper.pdf" className="header__nav-item button outline" target="">
                 <span>Whitepaper</span>
               </a>
             </li>
@@ -166,20 +154,13 @@ const Navbar = class extends React.Component {
             className="header__logo"
             data-g-event="header"
             data-g-label="Logo"
-            data-g-action="clicked"
-          >
+            data-g-action="clicked">
             <span>
-              <img
-                alt=""
-                src="/images/logo/harmony-logo-horizontal-full-color.svg "
-              />
+              <img alt="" src="/images/logo/harmony-logo-horizontal-full-color.svg " />
             </span>
           </a>
           <ul className="header__nav-items desktop">
-            <li
-              id="nav-item__technology"
-              className={'hide-md ' + this.state.technology}
-            >
+            <li id="nav-item__technology" className={'hide-md ' + this.state.technology}>
               <a href="/technology/" className="header__nav-item">
                 <span>Technology</span>
               </a>
@@ -189,18 +170,12 @@ const Navbar = class extends React.Component {
                 <span>Team</span>
               </a>
             </li>
-            <li
-              id="nav-item__careers"
-              className={'hide-md ' + this.state.careers}
-            >
+            <li id="nav-item__careers" className={'hide-md ' + this.state.careers}>
               <a href="/careers/" className="header__nav-item">
                 <span>Careers</span>
               </a>
             </li>
-            <li
-              id="nav-item__partners"
-              className={'hide-md ' + this.state.partners}
-            >
+            <li id="nav-item__partners" className={'hide-md ' + this.state.partners}>
               <a href="/partners/" className="header__nav-item">
                 <span>Partners</span>
               </a>
@@ -210,8 +185,7 @@ const Navbar = class extends React.Component {
                 href="https://medium.com/harmony-one"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="header__nav-item"
-              >
+                className="header__nav-item">
                 <span>Blog</span>
               </a>
             </li>
@@ -223,19 +197,17 @@ const Navbar = class extends React.Component {
 
             <li id="nav-item__whitepaper" className="whitepaper-button">
               <a
-                  className="header__nav-item button outline"
-                  onClick={this.onClickOnOnepager}
-                  onTouchMove={this.onClickOnOnepager}
-              >
+                className="header__nav-item button outline"
+                onClick={this.onClickOnOnepager}
+                onTouchMove={this.onClickOnOnepager}>
                 <span>Onepager</span>
               </a>
             </li>
-            <li id="nav-item__whitepaper"
-                className="whitepaper-button">
-              <a className="header__nav-item button outline"
-                 onClick={this.onClickWhitePaper}
-                 onTouchMove={this.onClickWhitePaper}
-              >
+            <li id="nav-item__whitepaper" className="whitepaper-button">
+              <a
+                className="header__nav-item button outline"
+                onClick={this.onClickWhitePaper}
+                onTouchMove={this.onClickWhitePaper}>
                 <span>Whitepaper</span>
               </a>
             </li>
