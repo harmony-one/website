@@ -1,0 +1,18 @@
+// !important are hacks to get around existing CSS messing things up
+.socialMediaVector {
+  padding-left: 14px;
+  display: flex;
+  flex-direction: column;
+  position: unset !important;
+  bottom: unset !important;
+  right: unset !important;
+  max-width: 50px !important;
+}
+
+.socialMediaVector > li:nth-child(n) {
+  padding-top: 11px;
+}
+
+.iconVectorContainer {
+  max-width: 50px !important;
+}

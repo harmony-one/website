@@ -1,8 +1,9 @@
+import React from 'react';
 import { graphql } from 'gatsby';
 import { GoMarkGithub } from 'react-icons/go';
 import { FaYoutube } from 'react-icons/fa';
 import PropTypes from 'prop-types';
-import React from 'react';
+import styles from './index-page.module.scss';
 import AdvisorRoll from '../components/AdvisorRoll';
 import EmailForm from '../components/EmailForm';
 import InvestorRoll from '../components/InvestorRoll';
@@ -27,6 +28,107 @@ function splitter(s) {
 
   return [s1, s2];
 }
+
+const SOCIAL_MEDIA_ICON_SEQUENCE = (
+  <ul className={`${styles.socialMediaVector} social-icons`}>
+    <li key="github">
+      <a
+        href="https://github.com/harmony-one/"
+        className="social__item"
+        data-g-event="footer"
+        data-g-label="github"
+        data-g-action="clicked">
+        <GoMarkGithub size={24} />
+      </a>
+    </li>
+    <li key="youtube">
+      <a
+        href="https://github.com/harmony-one/"
+        className="social__item"
+        data-g-event="footer"
+        data-g-label="youtube"
+        data-g-action="clicked">
+        <FaYoutube size={24} />
+      </a>
+    </li>
+    <li key="medium">
+      <a
+        href="/blog/"
+        className="social__item"
+        data-g-event="footer"
+        data-g-label="medium"
+        data-g-action="clicked">
+        <span>
+          <img alt="" src="/images/social/medium.svg " />
+        </span>
+      </a>
+    </li>
+    <li key="discord">
+      <a
+        href="https://discordapp.com/invite/rdCmBpe"
+        className="social__item"
+        data-g-event="footer"
+        data-g-label="discord"
+        data-g-action="clicked">
+        <span>
+          <img alt="" src="/images/social/discord.svg" />
+        </span>
+      </a>
+    </li>
+    <li key="instagram">
+      <a
+        href="https://www.instagram.com/harmonyoneprotocol/"
+        className="social__item"
+        target=""
+        data-g-event="footer"
+        data-g-label="instagram"
+        data-g-action="clicked">
+        <span>
+          <img alt="" src="/images/social/instagram.svg " />
+        </span>
+      </a>
+    </li>
+    <li key="telegram">
+      <a
+        href="https://t.me/harmony_one"
+        className="social__item"
+        target=""
+        data-g-event="footer"
+        data-g-label="telegram"
+        data-g-action="clicked">
+        <span>
+          <img alt="" src="/images/social/telegram.svg " />
+        </span>
+      </a>
+    </li>
+    <li key="twitter">
+      <a
+        href="https://twitter.com/harmonyprotocol"
+        className="social__item"
+        target=""
+        data-g-event="footer"
+        data-g-label="linkedin"
+        data-g-action="clicked">
+        <span>
+          <img alt="" src="/images/social/twitter.svg " />
+        </span>
+      </a>
+    </li>
+    <li key="linkedin">
+      <a
+        href="https://www.linkedin.com/company/harmony-protocol/"
+        className="social__item"
+        target=""
+        data-g-event="footer"
+        data-g-label="linkedin"
+        data-g-action="clicked">
+        <span>
+          <img alt="" src="/images/social/linkedin.svg " />
+        </span>
+      </a>
+    </li>
+  </ul>
+);
 
 export const IndexPageTemplate = ({
   roadmap_image,
@@ -56,6 +158,9 @@ export const IndexPageTemplate = ({
         <div className="hero__col">
           <img alt="" src="/images/hero/home-hero.svg " className="hero__image" />
         </div>
+        <div className={`hero__col ${styles.iconVectorContainer}`}>
+          {SOCIAL_MEDIA_ICON_SEQUENCE}
+        </div>
       </div>
       <div className="container">
         <a
@@ -67,104 +172,6 @@ export const IndexPageTemplate = ({
           <span className="icon-arrow-down" />
         </a>
       </div>
-      <ul className="social-icons">
-        <li key="github">
-          <a
-            href="https://github.com/harmony-one/"
-            className="social__item"
-            data-g-event="footer"
-            data-g-label="github"
-            data-g-action="clicked">
-            <GoMarkGithub size={24} />
-          </a>
-        </li>
-        <li key="youtube">
-          <a
-            href="https://github.com/harmony-one/"
-            className="social__item"
-            data-g-event="footer"
-            data-g-label="youtube"
-            data-g-action="clicked">
-            <FaYoutube size={24} />
-          </a>
-        </li>
-        <li key="medium">
-          <a
-            href="/blog/"
-            className="social__item"
-            data-g-event="footer"
-            data-g-label="medium"
-            data-g-action="clicked">
-            <span>
-              <img alt="" src="/images/social/medium.svg " />
-            </span>
-          </a>
-        </li>
-        <li key="discord">
-          <a
-            href="https://discordapp.com/invite/rdCmBpe"
-            className="social__item"
-            data-g-event="footer"
-            data-g-label="discord"
-            data-g-action="clicked">
-            <span>
-              <img alt="" src="/images/social/discord.svg" />
-            </span>
-          </a>
-        </li>
-        <li key="instagram">
-          <a
-            href="https://www.instagram.com/harmonyoneprotocol/"
-            className="social__item"
-            target=""
-            data-g-event="footer"
-            data-g-label="instagram"
-            data-g-action="clicked">
-            <span>
-              <img alt="" src="/images/social/instagram.svg " />
-            </span>
-          </a>
-        </li>
-        <li key="telegram">
-          <a
-            href="https://t.me/harmony_one"
-            className="social__item"
-            target=""
-            data-g-event="footer"
-            data-g-label="telegram"
-            data-g-action="clicked">
-            <span>
-              <img alt="" src="/images/social/telegram.svg " />
-            </span>
-          </a>
-        </li>
-        <li key="twitter">
-          <a
-            href="https://twitter.com/harmonyprotocol"
-            className="social__item"
-            target=""
-            data-g-event="footer"
-            data-g-label="linkedin"
-            data-g-action="clicked">
-            <span>
-              <img alt="" src="/images/social/twitter.svg " />
-            </span>
-          </a>
-        </li>
-        <li key="linkedin">
-          <a
-            href="https://www.linkedin.com/company/harmony-protocol/"
-            className="social__item"
-            target=""
-            data-g-event="footer"
-            data-g-label="linkedin"
-            data-g-action="clicked">
-            <span>
-              <img alt="" src="/images/social/linkedin.svg " />
-            </span>
-          </a>
-        </li>
-      </ul>
       <div className="spacer" />
     </div>
     <section className="section__feature-banner" id="features">
@@ -240,7 +247,6 @@ export const IndexPageTemplate = ({
         </div>
       </div>
     </section>
-
     <a id="harmony_team__block" />
     <section className="section__out-team">
       <div className="container">
