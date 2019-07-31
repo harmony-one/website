@@ -270,6 +270,7 @@ export const IndexPageTemplate = ({
       </div>
       <img src={roadmap_image} alt="Harmony Roadmap 2018 - 2019" className="roadmap-image" />
     </section>
+    <a id="investor__block" />
     <section className="section__investors">
       <div className="container">
         <h2 className="text--center">Investors in Harmony</h2>

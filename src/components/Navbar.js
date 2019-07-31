@@ -4,7 +4,7 @@ import styles from './sticky-nav-bar.module.scss';
 const ABOUT_US = [
   { title: 'Team', to: '#harmony_team__block' },
   { title: 'Partners', to: '#partner__block' },
-  { title: 'Investors', to: '' },
+  { title: 'Investors', to: '#investor__block' },
 ];
 
 const TECHNOLOGY = [
