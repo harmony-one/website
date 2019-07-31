@@ -32,6 +32,29 @@ const DISCUSS = [
   { title: 'Telegram', to: 'https://t.me/harmony_one' },
 ];
 
+const hamburger = (
+  <div className={styles.menuToggle}>
+    <input type="checkbox" />
+    <span />
+    <span />
+    <span />
+    <ul className={styles.sideBarMenu}>
+      <a href="#">
+        <li>Home</li>
+      </a>
+      <a href="#">
+        <li>About</li>
+      </a>
+      <a href="#">
+        <li>Info</li>
+      </a>
+      <a href="#">
+        <li>Contact</li>
+      </a>
+    </ul>
+  </div>
+);
+
 const Submenu = ({ list_items }) => (
   <ul className={styles.nav__submenu}>
     {list_items.map(({ title, to, elem }) => (
@@ -95,8 +118,11 @@ export default class extends Component {
     return (
       <header className={styles.headerWrapper}>
         <nav className={styles.nav}>
+          {hamburger}
+          <a className={styles.harmonyHeaderLogo} href={'/'}>
+            <img alt="Harmony's Logo" src="/images/logo/harmony-logo-horizontal-full-color.svg " />
+          </a>
           <ul className={styles.nav__menu}>
-            <img alt="" src="/images/logo/harmony-logo-horizontal-full-color.svg " />
             <li
               className={styles['nav__menu-item']}
               onMouseLeave={() => this.hover_action('about_us', false)}>
