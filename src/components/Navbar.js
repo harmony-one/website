@@ -99,7 +99,7 @@ export default class extends Component {
             <img alt="" src="/images/logo/harmony-logo-horizontal-full-color.svg " />
             <li
               className={styles['nav__menu-item']}
-              onMouseLeave={() => this.hover_action('about_us', true)}>
+              onMouseLeave={() => this.hover_action('about_us', false)}>
               <a onMouseEnter={() => this.hover_action('about_us', true)}>About</a>
               {about_us && <Submenu list_items={ABOUT_US} />}
             </li>
