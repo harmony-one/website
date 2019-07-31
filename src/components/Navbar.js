@@ -13,9 +13,9 @@ const TECHNOLOGY = [
 ];
 
 const NODE = [
-  { title: 'Explorer', to: '' },
-  { title: 'Foundation Nodes', to: '' },
-  { title: 'Node Signup', to: '' },
+  { title: 'Explorer', to: 'https://explorer.harmony.one' },
+  { title: 'Foundation Nodes', to: 'https://explorer.harmony.one' },
+  { title: 'Node Signup', to: 'https://explorer.harmony.one' },
 ];
 
 const DISCUSS = [
