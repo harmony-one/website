@@ -42,8 +42,29 @@ const PillBoxes = (
   </ol>
 );
 
+const storeScroll = () => (document.documentElement.dataset.scroll = window.scrollY);
+
 export default class extends Component {
-  state = { dropdown_show: { about_us: true, technology: false, node: false, discuss: false } };
+  state = {
+    dropdown_show: { about_us: true, technology: false, node: false, discuss: false },
+  };
+
+  handle_scroll = (fn = storeScroll) => {
+    let frame;
+    return (...params) => {
+      if (frame) {
+        cancelAnimationFrame(frame);
+      }
+      frame = requestAnimationFrame(() => {
+        fn(...params);
+      });
+    };
+  };
+
+  componentDidMount() {
+    document.addEventListener('scroll', this.handle_scroll(), { passive: true });
+    storeScroll();
+  }
 
   hover_action = (dropdown_key_name, value) =>
     this.setState({ dropdown_show: { [dropdown_key_name]: value } });
