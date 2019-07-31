@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import styles from './sticky-nav-bar.module.scss';
 
 const ABOUT_US = [
-  { title: 'Team', to: '' },
-  { title: 'Partners', to: '' },
+  { title: 'Team', to: '#harmony_team__block' },
+  { title: 'Partners', to: '#partner__block' },
   { title: 'Investors', to: '' },
 ];
 
@@ -16,16 +16,24 @@ const NODE = [
 ];
 
 const DISCUSS = [
-  { title: 'Blog', to: '' },
-  { title: 'Forum', to: '' },
+  {
+    title: 'Blog',
+    to: null,
+    elem: (
+      <a href="https:medium.com/harmony-one/latest" rel="noopener noreferrer" target="_blank">
+        Blog
+      </a>
+    ),
+  },
+  { title: 'Forum', to: 'https://talk.harmony.one' },
   { title: 'Telegram', to: '' },
 ];
 
 const Submenu = ({ list_items }) => (
   <ul className={styles.nav__submenu}>
-    {list_items.map(({ title }) => (
+    {list_items.map(({ title, to, elem }) => (
       <li key={title} className={styles['nav__submenu-item']}>
-        <a>{title}</a>
+        {to === null ? elem : <a href={to}>{title}</a>}
       </li>
     ))}
   </ul>
@@ -46,7 +54,7 @@ const storeScroll = () => (document.documentElement.dataset.scroll = window.scro
 
 export default class extends Component {
   state = {
-    dropdown_show: { about_us: true, technology: false, node: false, discuss: false },
+    dropdown_show: { about_us: false, technology: false, node: false, discuss: true },
   };
 
   handle_scroll = (fn = storeScroll) => {
@@ -288,18 +296,6 @@ export default class extends Component {
 //               </a>
 //             </li>
 //             <li id="nav-item__blog" className={'hide-md ' + this.state.blog}>
-//               <a
-//                 href="https://medium.com/harmony-one/latest"
-//                 rel="noopener noreferrer"
-//                 target="_blank"
-//                 className="header__nav-item">
-//                 <span>Blog</span>
-//               </a>
-//             </li>
-//             <li id="nav-item__blog" className="hide-md">
-//               <a href="https://talk.harmony.one" className="header__nav-item">
-//                 <span>Forum</span>
-//               </a>
 //             </li>
 
 //             <li id="nav-item__whitepaper" className="whitepaper-button">

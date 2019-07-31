@@ -1,4 +1,4 @@
-$color-blue: #00aeef;
+$dropdown-menu-color: aliceblue;
 $submenu-width: 180px;
 
 // TODO Need media queries here
@@ -46,7 +46,7 @@ $submenu-width: 180px;
   position: relative;
 
   &:hover {
-    background-color: $color-blue;
+    background-color: $dropdown-menu-color;
 
     .nav__submenu {
       display: block;
@@ -59,7 +59,7 @@ $submenu-width: 180px;
   text-transform: none;
   position: absolute;
   width: $submenu-width;
-  background-color: $color-blue;
+  background-color: $dropdown-menu-color;
 }
 
 .nav__submenu-item {
