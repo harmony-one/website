@@ -4,7 +4,7 @@ $submenu-width: 180px;
 // TODO Need media queries here
 .nav {
   box-sizing: border-box;
-  padding: 1em;
+  padding: 1.25rem;
   transition: background-color 0.25s;
   display: flex;
   flex-direction: row;
@@ -73,6 +73,7 @@ $submenu-width: 180px;
 .pill_boxes {
   display: flex;
   flex-direction: row;
+  padding-right: 7px;
 }
 
 .nav-sticky {
@@ -83,13 +84,21 @@ $submenu-width: 180px;
 
 html:not([data-scroll='0']) {
   body {
-    padding-top: 3em;
+    // padding-top: 3em;
   }
   .nav {
     position: fixed;
-    top: 0;
+    // top: 0;
     width: 100%;
     background-color: white;
     box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
   }
+}
+
+.gradient-button {
+  padding: 0 !important;
+}
+
+.one-pager-button {
+  padding-right: 10px;
 }
