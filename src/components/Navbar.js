@@ -1,13 +1,25 @@
 import React, { Component } from 'react';
 import styles from './sticky-nav-bar.module.scss';
 
-const ABOUT_US = [{ title: 'Team' }, { title: 'Partners' }, { title: 'Investors' }];
+const ABOUT_US = [
+  { title: 'Team', to: '' },
+  { title: 'Partners', to: '' },
+  { title: 'Investors', to: '' },
+];
 
-const TECHNOLOGY = [{ title: 'Whitepaper' }, { title: 'Roadmap' }];
+const TECHNOLOGY = [{ title: 'Whitepaper', to: '' }, { title: 'Roadmap', to: '' }];
 
-const NODE = [{ title: 'Explorer' }, { title: 'Foundation Nodes' }, { title: 'Node Signup' }];
+const NODE = [
+  { title: 'Explorer', to: '' },
+  { title: 'Foundation Nodes', to: '' },
+  { title: 'Node Signup', to: '' },
+];
 
-const DISCUSS = [{ title: 'Blog' }, { title: 'Forum' }, { title: 'Telegram' }];
+const DISCUSS = [
+  { title: 'Blog', to: '' },
+  { title: 'Forum', to: '' },
+  { title: 'Telegram', to: '' },
+];
 
 const Submenu = ({ list_items }) => (
   <ul className={styles.nav__submenu}>
@@ -19,8 +31,19 @@ const Submenu = ({ list_items }) => (
   </ul>
 );
 
+const PillBoxes = (
+  <ol className={styles.pill_boxes}>
+    <a className="header__nav-item button outline">
+      <span>Onepager</span>
+    </a>
+    <a className="header__nav-item button outline">
+      <span>Whitepaper</span>
+    </a>
+  </ol>
+);
+
 export default class extends Component {
-  state = { dropdown_show: { about_us: false, technology: false, node: false, discuss: false } };
+  state = { dropdown_show: { about_us: true, technology: false, node: false, discuss: false } };
 
   hover_action = (dropdown_key_name, value) =>
     this.setState({ dropdown_show: { [dropdown_key_name]: value } });
@@ -32,9 +55,10 @@ export default class extends Component {
     return (
       <nav className={styles.nav}>
         <ul className={styles.nav__menu}>
+          <img alt="" src="/images/logo/harmony-logo-horizontal-full-color.svg " />
           <li
             className={styles['nav__menu-item']}
-            onMouseLeave={() => this.hover_action('about_us', false)}>
+            onMouseLeave={() => this.hover_action('about_us', true)}>
             <a onMouseEnter={() => this.hover_action('about_us', true)}>About</a>
             {about_us && <Submenu list_items={ABOUT_US} />}
           </li>
@@ -57,6 +81,7 @@ export default class extends Component {
             {discuss && <Submenu list_items={DISCUSS} />}
           </li>
         </ul>
+        {PillBoxes}
       </nav>
     );
   }
