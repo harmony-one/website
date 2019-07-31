@@ -29,7 +29,7 @@ const DISCUSS = [
     ),
   },
   { title: 'Forum', to: 'https://talk.harmony.one' },
-  { title: 'Telegram', to: '' },
+  { title: 'Telegram', to: 'https://t.me/harmony_one' },
 ];
 
 const Submenu = ({ list_items }) => (
