@@ -93,36 +93,38 @@ export default class extends Component {
       dropdown_show: { about_us, technology, node, discuss },
     } = this.state;
     return (
-      <nav className={styles.nav}>
-        <ul className={styles.nav__menu}>
-          <img alt="" src="/images/logo/harmony-logo-horizontal-full-color.svg " />
-          <li
-            className={styles['nav__menu-item']}
-            onMouseLeave={() => this.hover_action('about_us', true)}>
-            <a onMouseEnter={() => this.hover_action('about_us', true)}>About</a>
-            {about_us && <Submenu list_items={ABOUT_US} />}
-          </li>
-          <li
-            className={styles['nav__menu-item']}
-            onMouseLeave={() => this.hover_action('technology', false)}>
-            <a onMouseEnter={() => this.hover_action('technology', true)}>Technology</a>
-            {technology && <Submenu list_items={TECHNOLOGY} />}
-          </li>
-          <li
-            className={styles['nav__menu-item']}
-            onMouseLeave={() => this.hover_action('node', false)}>
-            <a onMouseEnter={() => this.hover_action('node', true)}>Node</a>
-            {node && <Submenu list_items={NODE} />}
-          </li>
-          <li
-            className={styles['nav__menu-item']}
-            onMouseLeave={() => this.hover_action('discuss', false)}>
-            <a onMouseEnter={() => this.hover_action('discuss', true)}>Discuss</a>
-            {discuss && <Submenu list_items={DISCUSS} />}
-          </li>
-        </ul>
-        {PillBoxes}
-      </nav>
+      <header className={styles.headerWrapper}>
+        <nav className={styles.nav}>
+          <ul className={styles.nav__menu}>
+            <img alt="" src="/images/logo/harmony-logo-horizontal-full-color.svg " />
+            <li
+              className={styles['nav__menu-item']}
+              onMouseLeave={() => this.hover_action('about_us', true)}>
+              <a onMouseEnter={() => this.hover_action('about_us', true)}>About</a>
+              {about_us && <Submenu list_items={ABOUT_US} />}
+            </li>
+            <li
+              className={styles['nav__menu-item']}
+              onMouseLeave={() => this.hover_action('technology', false)}>
+              <a onMouseEnter={() => this.hover_action('technology', true)}>Technology</a>
+              {technology && <Submenu list_items={TECHNOLOGY} />}
+            </li>
+            <li
+              className={styles['nav__menu-item']}
+              onMouseLeave={() => this.hover_action('node', false)}>
+              <a onMouseEnter={() => this.hover_action('node', true)}>Node</a>
+              {node && <Submenu list_items={NODE} />}
+            </li>
+            <li
+              className={styles['nav__menu-item']}
+              onMouseLeave={() => this.hover_action('discuss', false)}>
+              <a onMouseEnter={() => this.hover_action('discuss', true)}>Discuss</a>
+              {discuss && <Submenu list_items={DISCUSS} />}
+            </li>
+          </ul>
+          {PillBoxes}
+        </nav>
+      </header>
     );
   }
 }

@@ -1,6 +1,12 @@
 $dropdown-menu-color: aliceblue;
 $submenu-width: 180px;
 
+.header-wrapper {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+}
+
 // TODO Need media queries here
 .nav {
   box-sizing: border-box;
