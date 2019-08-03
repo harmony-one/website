@@ -8,16 +8,13 @@ $harmony-text-color: #1b295e;
   width: 100%;
 }
 
-// TODO Need media queries here
 .nav {
   box-sizing: border-box;
-  padding: 1.25rem;
   transition: background-color 0.25s;
   display: flex;
   flex-direction: row;
   position: relative;
   z-index: 99;
-  padding-top: 24px;
   background: transparent;
   opacity: 1;
   color: #fff;
@@ -130,22 +127,37 @@ html:not([data-scroll='0']) {
   display: none;
 }
 
+.navWrapper {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 @media only screen and (max-width: 1023px) {
+  .hamburgerCheckbox {
+  }
+  .navWrapper {
+    //
+  }
   .menuToggle {
+    padding-left: 15px;
+    padding-top: 14px;
+
+    padding-bottom: 10px;
     display: block;
     position: relative;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
   }
-
+  .sideBarMenu hr {
+  }
   .menuToggle input {
     display: block;
     width: 40px;
     height: 32px;
     position: absolute;
-    top: -7px;
-    left: -5px;
     cursor: pointer;
     opacity: 0; /* hide this */
     z-index: 2; /* and place it over the hamburger */
@@ -187,8 +199,12 @@ html:not([data-scroll='0']) {
     transform: rotate(-45deg) translate(0, -1px);
   }
 
-  .harmony-header-logo {
-    background-color: orange;
+  .harmonyBanner {
+    display: none;
+  }
+
+  .harmonyBannerMenuSlideOut {
+    width: 100%;
   }
 
   .nav__menu {
@@ -196,7 +212,7 @@ html:not([data-scroll='0']) {
   }
   .nav {
     justify-content: flex-start;
-    padding-left: 14px;
+
     background-color: white;
   }
   .pill_boxes {
@@ -204,32 +220,40 @@ html:not([data-scroll='0']) {
   }
 
   .sideBarMenu {
-    display: block;
+    display: inline-block;
     position: absolute;
+    height: 100vh;
+    width: 75vw;
     top: 0;
-    left: 0;
     margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
     background: #ededed;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 
   .sideBarMenu a {
-    background-color: red;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 32px;
   }
 
   .sideBarMenu li {
     padding: 10px 0;
     font-size: 22px;
   }
-  .sideBarMenu input:checked ~ ul {
+
+  .menuToggle input:checked ~ ul {
     transform: none;
+    // display: none;
     // position: relative;
+  }
+  .harmonySideMenuWrapper {
+    padding: 0;
+    padding-left: 14px;
+    padding-top: 24px;
   }
 }

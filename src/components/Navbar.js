@@ -18,39 +18,64 @@ const NODE = [
   { title: 'Node Signup', to: 'https://explorer.harmony.one' },
 ];
 
+const MEDIUM_LATEST = (
+  <a href="https:medium.com/harmony-one/latest" rel="noopener noreferrer" target="_blank">
+    Blog
+  </a>
+);
+
 const DISCUSS = [
   {
     title: 'Blog',
     to: null,
-    elem: (
-      <a href="https:medium.com/harmony-one/latest" rel="noopener noreferrer" target="_blank">
-        Blog
-      </a>
-    ),
+    elem: MEDIUM_LATEST,
   },
   { title: 'Forum', to: 'https://talk.harmony.one' },
   { title: 'Telegram', to: 'https://t.me/harmony_one' },
 ];
 
+const HAMBURGER_ID = 'HAMBURGER_ID';
+
+const close_hamburger = () => {
+  const handle = document.querySelector(`#${HAMBURGER_ID}`);
+  handle.checked = false;
+  return true;
+};
+
 const hamburger = (
   <div className={styles.menuToggle}>
-    <input type="checkbox" />
+    <input id={HAMBURGER_ID} className={styles.hamburgerCheckbox} type="checkbox" />
     <span />
     <span />
     <span />
     <ul className={styles.sideBarMenu}>
-      <a href="#">
-        <li>Home</li>
-      </a>
-      <a href="#">
-        <li>About</li>
-      </a>
-      <a href="#">
-        <li>Info</li>
-      </a>
-      <a href="#">
-        <li>Contact</li>
-      </a>
+      <img
+        alt="Harmony's Logo"
+        className={styles.harmonyBannerMenuSlideOut}
+        src="/images/logo/harmony-logo-horizontal-full-color.svg "
+      />
+      <hr />
+      <section className={styles.harmonySideMenuWrapper}>
+        <ul>
+          <li>
+            <a href={'/technology'}>Technology</a>
+          </li>
+          <li>
+            <a onClick={close_hamburger} href="#harmony_team__block">
+              Team
+            </a>
+          </li>
+          <li>
+            <a href="/careers">Careers</a>
+          </li>
+          <li>
+            <a onClick={close_hamburger} href="#partner__block">
+              Partners
+            </a>
+          </li>
+          <li>{MEDIUM_LATEST}</li>
+        </ul>
+      </section>
     </ul>
   </div>
 );
@@ -119,36 +144,42 @@ export default class extends Component {
       <header className={styles.headerWrapper}>
         <nav className={styles.nav}>
           {hamburger}
-          <a className={styles.harmonyHeaderLogo} href={'/'}>
-            <img alt="Harmony's Logo" src="/images/logo/harmony-logo-horizontal-full-color.svg " />
-          </a>
-          <ul className={styles.nav__menu}>
-            <li
-              className={styles['nav__menu-item']}
-              onMouseLeave={() => this.hover_action('about_us', false)}>
-              <a onMouseEnter={() => this.hover_action('about_us', true)}>About</a>
-              {about_us && <Submenu list_items={ABOUT_US} />}
-            </li>
-            <li
-              className={styles['nav__menu-item']}
-              onMouseLeave={() => this.hover_action('technology', false)}>
-              <a onMouseEnter={() => this.hover_action('technology', true)}>Technology</a>
-              {technology && <Submenu list_items={TECHNOLOGY} />}
-            </li>
-            <li
-              className={styles['nav__menu-item']}
-              onMouseLeave={() => this.hover_action('node', false)}>
-              <a onMouseEnter={() => this.hover_action('node', true)}>Node</a>
-              {node && <Submenu list_items={NODE} />}
-            </li>
-            <li
-              className={styles['nav__menu-item']}
-              onMouseLeave={() => this.hover_action('discuss', false)}>
-              <a onMouseEnter={() => this.hover_action('discuss', true)}>Discuss</a>
-              {discuss && <Submenu list_items={DISCUSS} />}
-            </li>
-          </ul>
-          {PillBoxes}
+          <div className={styles.navWrapper}>
+            <a className={styles.harmonyHeaderLogo} href={'/'}>
+              <img
+                alt="Harmony's Logo"
+                className={styles.harmonyBanner}
+                src="/images/logo/harmony-logo-horizontal-full-color.svg "
+              />
+            </a>
+            <ul className={styles.nav__menu}>
+              <li
+                className={styles['nav__menu-item']}
+                onMouseLeave={() => this.hover_action('about_us', false)}>
+                <a onMouseEnter={() => this.hover_action('about_us', true)}>About</a>
+                {about_us && <Submenu list_items={ABOUT_US} />}
+              </li>
+              <li
+                className={styles['nav__menu-item']}
+                onMouseLeave={() => this.hover_action('technology', false)}>
+                <a onMouseEnter={() => this.hover_action('technology', true)}>Technology</a>
+                {technology && <Submenu list_items={TECHNOLOGY} />}
+              </li>
+              <li
+                className={styles['nav__menu-item']}
+                onMouseLeave={() => this.hover_action('node', false)}>
+                <a onMouseEnter={() => this.hover_action('node', true)}>Node</a>
+                {node && <Submenu list_items={NODE} />}
+              </li>
+              <li
+                className={styles['nav__menu-item']}
+                onMouseLeave={() => this.hover_action('discuss', false)}>
+                <a onMouseEnter={() => this.hover_action('discuss', true)}>Discuss</a>
+                {discuss && <Submenu list_items={DISCUSS} />}
+              </li>
+            </ul>
+            {PillBoxes}
+          </div>
         </nav>
       </header>
     );
