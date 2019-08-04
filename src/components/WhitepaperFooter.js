@@ -1,8 +1,9 @@
 import React from 'react';
+
 import GlobalEmitter from '../utils/EventEmitter';
 import styles from './whitepaper-footer.module.scss';
 
-const WhitepaperFooter = class extends React.Component {
+export default class WhitepaperFooter extends React.Component {
   clickOnWhitePaper(e) {
     const pos = e.target.getClientRects()[0];
     const left = pos.left;
@@ -48,6 +49,4 @@ const WhitepaperFooter = class extends React.Component {
       </div>
     );
   }
-};
-
-export default WhitepaperFooter;
+}
