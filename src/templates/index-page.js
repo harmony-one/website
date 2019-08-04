@@ -285,7 +285,7 @@ export const IndexPageTemplate = ({
     <section className="section__blog-posts" id="blog-posts">
       <div className="container">
         <div className="blog-posts">
-          <h3 className="text--center">Join the Conversation</h3>
+          <h3 className="text--center">Latest news</h3>
           <div className="blog-posts__container">
             {conversation &&
               conversation.map((item, index) => (
