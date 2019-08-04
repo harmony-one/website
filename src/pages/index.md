@@ -22,19 +22,19 @@ latest_updates:
   - title: We’ve raised a private seed round to develop the core protocol and start engaging our early community.
 
 conversation:
-  - image: /images/blog/article-06.jpg
+  - image: /images/pangea.jpeg
     title: Introducing Pangea
     link: https://harmony.one/newsletter
     description: >-
       We are launching Pangaea, an experimental game for thousands of people to interact with the Harmony network, test the limitations of our technology and have lots of fun while earning rewards.
 
-  - image: /images/blog/article-08.jpg
+  - image: /images/morpheus.png
     title: Harmony and Morpheus team up
     link: https://harmony.one/roadmap
     description: >-
       We are delighted to announce that we have partnered with Morpheus Labs, a Blockchain Platform as a Service (BPaaS) and App Marketplace which enables organisations and developers to rapidly design, deploy and operate distributed ledgers at a fraction of the current cost and time while achieving security and high scalability support through Harmony’s infrastructure
 
-  - image: /images/blog/article-03.jpg
+  - image: /images/transparency-tuesday.png
     title: Transparency Tuesday
     link: https://medium.com/harmony-one/harmony-3x3-interview-questions-on-%20culture-and-values-b87c8b92774
     description: >-
