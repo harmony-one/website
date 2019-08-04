@@ -23,18 +23,20 @@ latest_updates:
 
 conversation:
   - image: /images/blog/article-06.jpg
-    title: Latest Project Update
+    title: Introducing Pangea
     link: https://harmony.one/newsletter
     description: >-
-      We have launched devnet.harmony.one (running on multiple shards) and community forum talk.harmony.one (hosting discussion on consensus & sharding).
+      We are launching Pangaea, an experimental game for thousands of people to interact with the Harmony network, test the limitations of our technology and have lots of fun while earning rewards.
+
   - image: /images/blog/article-08.jpg
-    title: Harmony 2019 Roadmap
+    title: Harmony and Morpheus team up
     link: https://harmony.one/roadmap
     description: >-
-      Our roadmap aims to reinforce “Wear Your Ambitions Bright on Sleeve” with Harmony community, and to plan for the “Crypto Winter & Invincible Summer.”
+      We are delighted to announce that we have partnered with Morpheus Labs, a Blockchain Platform as a Service (BPaaS) and App Marketplace which enables organisations and developers to rapidly design, deploy and operate distributed ledgers at a fraction of the current cost and time while achieving security and high scalability support through Harmony’s infrastructure
+
   - image: /images/blog/article-03.jpg
-    title: Culture and Values that matter at Harmony
+    title: Transparency Tuesday
     link: https://medium.com/harmony-one/harmony-3x3-interview-questions-on-%20culture-and-values-b87c8b92774
     description: >-
-      Everyone who joins the Harmony team has to answer three questions on Culture. We're very intentional about the culture we want to build and live everyday.
+      This week marks our third live transparency update where we document our engineering, businessand marketing progress for the community. AnyONE can comment on this document. Our team will see your feedback live and provide answers.
 ---
