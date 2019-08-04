@@ -235,16 +235,6 @@ export const IndexPageTemplate = ({
               ))}
           </div>
         </div>
-        <div className="text--center">
-          <a
-            href="/technology/#timeline-catcher"
-            className="outline button"
-            data-g-event="timeline"
-            data-g-label="See Our Roadmap"
-            data-g-action="clicked">
-            <span>See Our Roadmap</span>
-          </a>
-        </div>
       </div>
     </section>
     <a id="harmony_team__block" />
