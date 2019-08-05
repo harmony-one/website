@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import styles from './sticky-nav-bar.module.scss';
 
 const ABOUT_US = [
@@ -7,15 +8,10 @@ const ABOUT_US = [
   { title: 'Investors', to: '#investor__block' },
 ];
 
-const TECHNOLOGY = [
-  { title: 'Whitepaper', to: '/pdf/whitepaper.pdf' },
-  { title: 'Roadmap', to: '' },
-];
-
 const NODE = [
+  { title: 'Foundation Nodes', to: 'https://nodes.harmony.one' },
   { title: 'Explorer', to: 'https://explorer.harmony.one' },
-  { title: 'Foundation Nodes', to: 'https://explorer.harmony.one' },
-  { title: 'Node Signup', to: 'https://explorer.harmony.one' },
+  { title: 'Node Signup', to: 'https://harmony.one/node-signup' },
 ];
 
 const MEDIUM_LATEST = (
@@ -30,7 +26,7 @@ const DISCUSS = [
     to: null,
     elem: MEDIUM_LATEST,
   },
-  { title: 'Forum', to: 'https://talk.harmony.one' },
+  { title: 'Discord', to: 'https://discordapp.com/invite/rdCmBpe' },
   { title: 'Telegram', to: 'https://t.me/harmony_one' },
 ];
 
@@ -138,7 +134,7 @@ export default class extends Component {
 
   render() {
     const {
-      dropdown_show: { about_us, technology, node, discuss },
+      dropdown_show: { about_us, roadmap, node, discuss },
     } = this.state;
     return (
       <header className={styles.headerWrapper}>
@@ -161,12 +157,6 @@ export default class extends Component {
               </li>
               <li
                 className={styles['nav__menu-item']}
-                onMouseLeave={() => this.hover_action('technology', false)}>
-                <a onMouseEnter={() => this.hover_action('technology', true)}>Technology</a>
-                {technology && <Submenu list_items={TECHNOLOGY} />}
-              </li>
-              <li
-                className={styles['nav__menu-item']}
                 onMouseLeave={() => this.hover_action('node', false)}>
                 <a onMouseEnter={() => this.hover_action('node', true)}>Node</a>
                 {node && <Submenu list_items={NODE} />}
@@ -176,6 +166,15 @@ export default class extends Component {
                 onMouseLeave={() => this.hover_action('discuss', false)}>
                 <a onMouseEnter={() => this.hover_action('discuss', true)}>Discuss</a>
                 {discuss && <Submenu list_items={DISCUSS} />}
+              </li>
+              <li className={styles['nav__menu-item']}>
+                <a href={'#roadmap__block'}>Roadmap</a>
+              </li>
+              <li className={styles['nav__menu-item']}>
+                <a href={'/careers'}>Join Us!</a>
+              </li>
+              <li className={styles['nav__menu-item']}>
+                <a href={'https://harmony.one/newsletter'}>newsletter</a>
               </li>
             </ul>
             {PillBoxes}
