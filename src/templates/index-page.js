@@ -43,7 +43,7 @@ const SOCIAL_MEDIA_ICON_SEQUENCE = (
     </li>
     <li key="youtube">
       <a
-        href="https://github.com/harmony-one/"
+        href="https://www.youtube.com/channel/UCDfuhS7xu69IhK5AJSyiF0g"
         className="social__item"
         data-g-event="footer"
         data-g-label="youtube"
@@ -248,16 +248,14 @@ export const IndexPageTemplate = ({
             create a radically fair economy through blockchain.{' '}
           </h4>
         </div>
-
         <TeamRoll />
-
         <div className="our-team-description">
           <h3 className="text--center first-line">The Harmony Advisors</h3>
         </div>
-
         <AdvisorRoll />
       </div>
     </section>
+    <a id="roadmap__block" />
     <section className="section__roadmap">
       <div className="container">
         <h2 className="text--center">Harmony Roadmap 2018 - 2019</h2>
