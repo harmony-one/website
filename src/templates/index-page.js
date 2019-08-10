@@ -1,6 +1,9 @@
-import { graphql } from 'gatsby';
-import PropTypes from 'prop-types';
 import React from 'react';
+import { graphql } from 'gatsby';
+import { GoMarkGithub } from 'react-icons/go';
+import { FaYoutube } from 'react-icons/fa';
+import PropTypes from 'prop-types';
+import styles from './index-page.module.scss';
 import AdvisorRoll from '../components/AdvisorRoll';
 import EmailForm from '../components/EmailForm';
 import InvestorRoll from '../components/InvestorRoll';
@@ -26,11 +29,112 @@ function splitter(s) {
   return [s1, s2];
 }
 
+const SOCIAL_MEDIA_ICON_SEQUENCE = (
+  <ul className={`${styles.socialMediaVector} social-icons`}>
+    <li key="github">
+      <a
+        href="https://github.com/harmony-one/"
+        className="social__item"
+        data-g-event="footer"
+        data-g-label="github"
+        data-g-action="clicked">
+        <GoMarkGithub size={24} />
+      </a>
+    </li>
+    <li key="youtube">
+      <a
+        href="https://www.youtube.com/channel/UCDfuhS7xu69IhK5AJSyiF0g"
+        className="social__item"
+        data-g-event="footer"
+        data-g-label="youtube"
+        data-g-action="clicked">
+        <FaYoutube size={24} />
+      </a>
+    </li>
+    <li key="medium">
+      <a
+        href="/blog/"
+        className="social__item"
+        data-g-event="footer"
+        data-g-label="medium"
+        data-g-action="clicked">
+        <span>
+          <img alt="" src="/images/social/medium.svg " />
+        </span>
+      </a>
+    </li>
+    <li key="discord">
+      <a
+        href="https://discordapp.com/invite/rdCmBpe"
+        className="social__item"
+        data-g-event="footer"
+        data-g-label="discord"
+        data-g-action="clicked">
+        <span>
+          <img alt="" src="/images/social/discord.svg" />
+        </span>
+      </a>
+    </li>
+    <li key="instagram">
+      <a
+        href="https://www.instagram.com/harmonyoneprotocol/"
+        className="social__item"
+        target=""
+        data-g-event="footer"
+        data-g-label="instagram"
+        data-g-action="clicked">
+        <span>
+          <img alt="" src="/images/social/instagram.svg " />
+        </span>
+      </a>
+    </li>
+    <li key="telegram">
+      <a
+        href="https://t.me/harmony_one"
+        className="social__item"
+        target=""
+        data-g-event="footer"
+        data-g-label="telegram"
+        data-g-action="clicked">
+        <span>
+          <img alt="" src="/images/social/telegram.svg " />
+        </span>
+      </a>
+    </li>
+    <li key="twitter">
+      <a
+        href="https://twitter.com/harmonyprotocol"
+        className="social__item"
+        target=""
+        data-g-event="footer"
+        data-g-label="linkedin"
+        data-g-action="clicked">
+        <span>
+          <img alt="" src="/images/social/twitter.svg " />
+        </span>
+      </a>
+    </li>
+    <li key="linkedin">
+      <a
+        href="https://www.linkedin.com/company/harmony-protocol/"
+        className="social__item"
+        target=""
+        data-g-event="footer"
+        data-g-label="linkedin"
+        data-g-action="clicked">
+        <span>
+          <img alt="" src="/images/social/linkedin.svg " />
+        </span>
+      </a>
+    </li>
+  </ul>
+);
+
 export const IndexPageTemplate = ({
   roadmap_image,
   latest_updates,
   conversation,
-  decentralization
+  decentralization,
 }) => (
   <main className="main">
     <div className="hero hero__home">
@@ -43,23 +147,19 @@ export const IndexPageTemplate = ({
             <br /> Harmony for One and All.
           </h2>
           <p className="hero__desc subhead">
-            Our open infrastructure is a revolutionary high-throughput,
-            low-latency, and low-fee consensus platform designed to power
-            decentralized economies of the future.
+            Our open infrastructure is a revolutionary high-throughput, low-latency, and low-fee
+            consensus platform designed to power decentralized economies of the future.
           </p>
-          <h4 className="hero-signup-text">
-            Be the first to know on anything Harmony
-          </h4>
+          <h4 className="hero-signup-text">Be the first to know on anything Harmony</h4>
           <div id="mc_embed_signup" className="harmony-signup">
             <EmailForm border={true} />
           </div>
         </div>
         <div className="hero__col">
-          <img
-            alt=""
-            src="/images/hero/home-hero.svg "
-            className="hero__image"
-          />
+          <img alt="" src="/images/hero/home-hero.svg " className="hero__image" />
+        </div>
+        <div className={`hero__col ${styles.iconVectorContainer}`}>
+          {SOCIAL_MEDIA_ICON_SEQUENCE}
         </div>
       </div>
       <div className="container">
@@ -68,108 +168,10 @@ export const IndexPageTemplate = ({
           data-g-event="hero"
           data-g-label="features"
           data-g-action="clicked"
-          className="scroll-trigger"
-        >
+          className="scroll-trigger">
           <span className="icon-arrow-down" />
         </a>
       </div>
-      <ul className="social-icons">
-        <li key="github">
-          <a
-            href="https://github.com/harmony-one/"
-            className="social__item"
-            data-g-event="footer"
-            data-g-label="github"
-            data-g-action="clicked"
-          >
-            <span>
-              <img alt="" src="/images/social/github.svg " />
-            </span>
-          </a>
-        </li>
-        <li key="medium">
-          <a
-            href="/blog/"
-            className="social__item"
-            data-g-event="footer"
-            data-g-label="medium"
-            data-g-action="clicked"
-          >
-            <span>
-              <img alt="" src="/images/social/medium.svg " />
-            </span>
-          </a>
-        </li>
-        <li key="discord">
-          <a
-            href="https://discordapp.com/invite/rdCmBpe"
-            className="social__item"
-            data-g-event="footer"
-            data-g-label="discord"
-            data-g-action="clicked"
-          >
-            <span>
-              <img alt="" src="/images/social/discord.svg" />
-            </span>
-          </a>
-        </li>
-        <li key="instagram">
-          <a
-            href="https://www.instagram.com/harmonyoneprotocol/"
-            className="social__item"
-            target=""
-            data-g-event="footer"
-            data-g-label="instagram"
-            data-g-action="clicked"
-          >
-            <span>
-              <img alt="" src="/images/social/instagram.svg " />
-            </span>
-          </a>
-        </li>
-        <li key="telegram">
-          <a
-            href="https://t.me/harmony_one"
-            className="social__item"
-            target=""
-            data-g-event="footer"
-            data-g-label="telegram"
-            data-g-action="clicked"
-          >
-            <span>
-              <img alt="" src="/images/social/telegram.svg " />
-            </span>
-          </a>
-        </li>
-        <li key="twitter">
-          <a
-            href="https://twitter.com/harmonyprotocol"
-            className="social__item"
-            target=""
-            data-g-event="footer"
-            data-g-label="linkedin"
-            data-g-action="clicked"
-          >
-            <span>
-              <img alt="" src="/images/social/twitter.svg " />
-            </span>
-          </a>
-        </li>
-        <li key="linkedin">
-          <a
-            href="https://www.linkedin.com/company/harmony-protocol/"
-            className="social__item"
-            target=""
-            data-g-event="footer"
-            data-g-label="linkedin"
-            data-g-action="clicked"
-          >
-            <span>
-              <img alt="" src="/images/social/linkedin.svg " />
-            </span>
-          </a>
-        </li>
-      </ul>
       <div className="spacer" />
     </div>
     <section className="section__feature-banner" id="features">
@@ -193,15 +195,11 @@ export const IndexPageTemplate = ({
     </section>
     <section className="decentralization">
       <div className="container">
-        <h3 className="text-container__title mobile text--center">
-          {decentralization.heading}
-        </h3>
+        <h3 className="text-container__title mobile text--center">{decentralization.heading}</h3>
       </div>
       <div className="container decentralization__container">
         <div className="decentralization__text text-container">
-          <h3 className="text-container__title desktop">
-            {decentralization.heading}
-          </h3>{' '}
+          <h3 className="text-container__title desktop">{decentralization.heading}</h3>{' '}
           {decentralization.description.map((item, index) => (
             <p className="text-container__text" key={index}>
               {item.segment}
@@ -213,18 +211,13 @@ export const IndexPageTemplate = ({
               className="outline button"
               data-g-event="timeline"
               data-g-label="Our Technology"
-              data-g-action="clicked"
-            >
+              data-g-action="clicked">
               <span>Our Technology</span>
             </a>
           </div>
         </div>
         <div className="decentralization__image">
-          <img
-            alt=""
-            src="/images/home-technology.svg "
-            className="tech-image"
-          />
+          <img alt="" src="/images/home-technology.svg " className="tech-image" />
         </div>
       </div>
     </section>
@@ -242,63 +235,36 @@ export const IndexPageTemplate = ({
               ))}
           </div>
         </div>
-        <div className="text--center">
-          <a
-            href="/technology/#timeline-catcher"
-            className="outline button"
-            data-g-event="timeline"
-            data-g-label="See Our Roadmap"
-            data-g-action="clicked"
-          >
-            <span>See Our Roadmap</span>
-          </a>
-        </div>
       </div>
     </section>
-
-    <section className="section__latest-update">
-      <h3 className="text--center">
-        Sign up and get the latest Harmony tech updates{' '}
-      </h3>
-      <div id="mc_embed_signup" className="harmony-signup">
-        <EmailForm border={false} />
-      </div>
-    </section>
+    <a id="harmony_team__block" />
     <section className="section__out-team">
       <div className="container">
         <h2 className="text--center">The Harmony Team</h2>
         <div className="our-team-description">
-          <h4 className="text--center first-line">
-            We’re ambitiously idealistic
-          </h4>
+          <h4 className="text--center first-line">We’re ambitiously idealistic</h4>
           <h4 className="text--center">
-            That’s why we left our jobs at big companies like Google, Apple,
-            Microsoft and Amazon to create a radically fair economy through
-            blockchain.{' '}
+            That’s why we left our jobs at big companies like Google, Apple, Microsoft and Amazon to
+            create a radically fair economy through blockchain.{' '}
           </h4>
         </div>
-
         <TeamRoll />
-
         <div className="our-team-description">
           <h3 className="text--center first-line">The Harmony Advisors</h3>
         </div>
-
         <AdvisorRoll />
       </div>
     </section>
+    <a id="roadmap__block" />
     <section className="section__roadmap">
       <div className="container">
         <h2 className="text--center">Harmony Roadmap 2018 - 2019</h2>
         <div className="our-team-description" />
         <h4 className="text--center first-line">What Harmony has been up to</h4>
       </div>
-      <img
-        src={roadmap_image}
-        alt="Harmony Roadmap 2018 - 2019"
-        className="roadmap-image"
-      />
+      <img src={roadmap_image} alt="Harmony Roadmap 2018 - 2019" className="roadmap-image" />
     </section>
+    <a id="investor__block" />
     <section className="section__investors">
       <div className="container">
         <h2 className="text--center">Investors in Harmony</h2>
@@ -306,6 +272,7 @@ export const IndexPageTemplate = ({
         <InvestorRoll />
       </div>
     </section>
+    <a id="partner__block" />
     <section className="section__partnership">
       <div className="container">
         <h2 className="text--center">Harmony Partners</h2>
@@ -316,7 +283,7 @@ export const IndexPageTemplate = ({
     <section className="section__blog-posts" id="blog-posts">
       <div className="container">
         <div className="blog-posts">
-          <h3 className="text--center">Join the Conversation</h3>
+          <h3 className="text--center">Latest news</h3>
           <div className="blog-posts__container">
             {conversation &&
               conversation.map((item, index) => (
@@ -327,11 +294,7 @@ export const IndexPageTemplate = ({
                     <p>{item.description}</p>
                   </div>
                   <a href={item.link} target="">
-                    <img
-                      alt=""
-                      src="/images/icons/continue-icon.svg "
-                      className="blog__icon"
-                    />
+                    <img alt="" src="/images/icons/continue-icon.svg " className="blog__icon" />
                   </a>
                 </div>
               ))}
@@ -342,8 +305,7 @@ export const IndexPageTemplate = ({
               className="outline button"
               data-g-event="blog-posts"
               data-g-label="Read more on Medium"
-              data-g-action="clicked"
-            >
+              data-g-action="clicked">
               <span>Read more on Medium</span>
             </a>
           </div>
@@ -358,7 +320,7 @@ IndexPageTemplate.propTypes = {
   roadmap_image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   latest_updates: PropTypes.array,
   conversation: PropTypes.array,
-  decentralization: PropTypes.shape({})
+  decentralization: PropTypes.shape({}),
 };
 
 const IndexPage = ({ data }) => {
@@ -379,9 +341,9 @@ const IndexPage = ({ data }) => {
 IndexPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object
-    })
-  })
+      frontmatter: PropTypes.object,
+    }),
+  }),
 };
 
 export default IndexPage;

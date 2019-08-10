@@ -2,6 +2,8 @@ import { graphql, StaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import styles from './team-detail.module.scss';
+
 class TeamRoll extends React.Component {
   render() {
     const { data } = this.props;
@@ -31,8 +33,11 @@ class TeamRoll extends React.Component {
                 </a>
               </h3>
 
-              {post.frontmatter.desc.map( (item,index) => (
-                  <div key={index}><p>{item.text}</p><br/></div>
+              {post.frontmatter.desc.map((item, index) => (
+                <div key={index}>
+                  <p className={styles.bio}>{item.text}</p>
+                  <br />
+                </div>
               ))}
             </div>
           ))}
@@ -44,9 +49,9 @@ class TeamRoll extends React.Component {
 TeamRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array
-    })
-  })
+      edges: PropTypes.array,
+    }),
+  }),
 };
 
 export default () => (

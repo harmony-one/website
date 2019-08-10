@@ -1,17 +1,12 @@
-import React  from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import FAQRoll from '../components/FAQRoll'
-import Roadmap from '../components/Roadmap'
-import WhitepaperFooter from '../components/WhitepaperFooter'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import Layout from '../components/Layout';
+import FAQRoll from '../components/FAQRoll';
+import Roadmap from '../components/Roadmap';
+import WhitepaperFooter from '../components/WhitepaperFooter';
 
-export const TechnologyPageTemplate = ({ 
-  title, 
-  description, 
-  content
-}) => {
-
+export const TechnologyPageTemplate = ({ title, description, content }) => {
   return (
     <main className="main">
       <div className="hero hero hero__technology">
@@ -27,10 +22,9 @@ export const TechnologyPageTemplate = ({
 
       <section className="section__alternating-grid" id="grid">
         <div className="container">
-
           {content.map(item => (
             <div className="grid__item">
-              <img alt="" src={item.image} className={" grid__item__image"} />
+              <img alt="" src={item.image} className={' grid__item__image'} />
               <div className="grid__item__content">
                 <div className="content-inner">
                   <h3 className="text--center">{item.title}</h3>
@@ -39,46 +33,44 @@ export const TechnologyPageTemplate = ({
               </div>
             </div>
           ))}
-
         </div>
       </section>
 
-      <Roadmap />
       <FAQRoll />
-      <WhitepaperFooter/>
+      <WhitepaperFooter />
     </main>
-  )
-}
+  );
+};
 
 TechnologyPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
-  content: PropTypes.shape({  
+  content: PropTypes.shape({
     title: PropTypes.string,
     text: PropTypes.string,
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
-}
+};
 
 const TechnologyPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
-    <Layout page='technology'>
+    <Layout page="technology">
       <TechnologyPageTemplate
         title={post.frontmatter.title}
         description={post.frontmatter.description}
         content={post.frontmatter.content}
       />
     </Layout>
-  )
-}
+  );
+};
 
 TechnologyPage.propTypes = {
   data: PropTypes.object.isRequired,
-}
+};
 
-export default TechnologyPage
+export default TechnologyPage;
 
 export const TechnologyPageQuery = graphql`
   query TechnologyPage($id: String!) {
@@ -94,4 +86,4 @@ export const TechnologyPageQuery = graphql`
       }
     }
   }
-`
+`;
