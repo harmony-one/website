@@ -1,11 +1,36 @@
 import React, { Component } from 'react';
+import { Link } from 'gatsby';
 
 import styles from './sticky-nav-bar.module.scss';
 
 const ABOUT_US = [
-  { title: 'Team', to: '#harmony_team__block' },
-  { title: 'Partners', to: '#partner__block' },
-  { title: 'Investors', to: '#investor__block' },
+  {
+    title: 'Team',
+    to: null,
+    elem: (
+      <Link state={{ to_block: '#harmony_team__block' }} to={'#harmony_team__block'}>
+        Team
+      </Link>
+    ),
+  },
+  {
+    title: 'Partners',
+    to: null,
+    elem: (
+      <Link state={{ to_block: '#partner__block' }} to={'#partner__block'}>
+        Partners
+      </Link>
+    ),
+  },
+  {
+    title: 'Investors',
+    to: null,
+    elem: (
+      <Link state={{ to_block: '#investor__block' }} to={'#investor__block'}>
+        Partners
+      </Link>
+    ),
+  },
 ];
 
 const NODE = [
@@ -168,7 +193,9 @@ export default class extends Component {
                 {discuss && <Submenu list_items={DISCUSS} />}
               </li>
               <li className={styles['nav__menu-item']}>
-                <a href={'#roadmap__block'}>Roadmap</a>
+                <Link state={{ to_block: '#roadmap__block' }} to={'#roadmap__block'}>
+                  Roadmap
+                </Link>
               </li>
               <li className={styles['nav__menu-item']}>
                 <a href={'/careers'}>Join Us!</a>
