@@ -139,7 +139,7 @@ export const IndexPageTemplate = ({
   <main className="main">
     <div className="hero hero__home">
       <img alt="" src="/images/hero/hero-curve.svg " className="hero__curve" />
-      <div className="hero__container container">
+      <div className={`hero__container container ${styles.heroContainer}`}>
         <div className="hero__col">
           <h2 className="hero__title">
             Open Consensus
