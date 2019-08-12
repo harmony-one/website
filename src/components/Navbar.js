@@ -40,7 +40,7 @@ const NODE = [
 ];
 
 const MEDIUM_LATEST = (
-  <a href="https:medium.com/harmony-one/latest" rel="noopener noreferrer" target="_blank">
+  <a href="https://medium.com/harmony-one/latest" rel="noopener noreferrer" target="_blank">
     Blog
   </a>
 );
