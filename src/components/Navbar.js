@@ -82,17 +82,23 @@ const hamburger = (
             <a href={'/technology'}>Technology</a>
           </li>
           <li>
-            <a onClick={close_hamburger} href="#harmony_team__block">
+            <Link
+              onClick={close_hamburger}
+              state={{ to_block: '#harmony_team__block' }}
+              to={'#harmony_team__block'}>
               Team
-            </a>
+            </Link>
           </li>
           <li>
             <a href="/careers">Careers</a>
           </li>
           <li>
-            <a onClick={close_hamburger} href="#partner__block">
+            <Link
+              onClick={close_hamburger}
+              state={{ to_block: '#partner__block' }}
+              to={'#partner__block'}>
               Partners
-            </a>
+            </Link>
           </li>
           <li>{MEDIUM_LATEST}</li>
         </ul>
