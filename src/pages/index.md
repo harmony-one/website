@@ -35,7 +35,7 @@ conversation:
       Our CEO's keynote on Scaling Privacy, Secure Staking and Radical Fairness.
 
   - image: /images/blog-card-3.png
-    title: Transparency Tuesday
+    title: Culture and Values
     link: https://harmony.one/culture
     description: >-
       We are building a team with the culture of Empathy, Passion and Excellence.
