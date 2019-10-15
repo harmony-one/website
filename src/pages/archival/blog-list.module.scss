@@ -1,0 +1,22 @@
+.blogPostWrapper {
+  display: flex;
+}
+
+.blogPost {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.blogPostHeader {
+  padding-bottom: 150px;
+}
+
+.blogPostHeader p {
+  font-size: 18px;
+  font-style: bold;
+}
+
+.blogTopBanner {
+  height: 270px !important;
+}

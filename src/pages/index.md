@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 roadmap:
-  image: /images/Harmony-Blockchain-Roadmap.jpg
+  image: /images/Harmony-Blockchain-Roadmap.png
 
 decentralization:
   heading: Decentralization at Scale
@@ -22,21 +22,21 @@ latest_updates:
   - title: We’ve raised a private seed round to develop the core protocol and start engaging our early community.
 
 conversation:
-  - image: /images/pangea.jpeg
-    title: Introducing Pangea
-    link: https://medium.com/harmony-one/introducing-pangaea-an-uncharted-territory-within-the-harmony-universe-179310cefbfe
+  - image: /images/blog-card-1.png
+    title: Latest Newsletter
+    link: https://harmony.one/news
     description: >-
-      We are launching Pangaea, an experimental game for thousands of people to interact with the Harmony network, test the limitations of our technology and have lots of fun while earning rewards.
+      Read more about our Binance IEO, Mainnet Launch and team tweets.
 
-  - image: /images/morpheus.png
-    title: Harmony and Morpheus team up
-    link: https://medium.com/harmony-one/morpheus-labs-integrates-with-harmony-protocol-b05002748fdc
+  - image: /images/blog-card-2.png
+    title: Annual Keynote
+    link: https://harmony.one/keynote
     description: >-
-      We are delighted to announce that we have partnered with Morpheus Labs, a Blockchain Platform as a Service (BPaaS) and App Marketplace which enables organisations and developers to rapidly design, deploy and operate distributed ledgers at a fraction of the current cost and time while achieving security and high scalability support through Harmony’s infrastructure
+      Our CEO's keynote on Scaling Privacy, Secure Staking and Radical Fairness.
 
-  - image: /images/transparency-tuesday.png
+  - image: /images/blog-card-3.png
     title: Transparency Tuesday
-    link: https://medium.com/harmony-one/harmony-transparency-tuesday-2019-july-30-73472b6d006c
+    link: https://harmony.one/culture
     description: >-
-      This week marks our third live transparency update where we document our engineering, businessand marketing progress for the community. AnyONE can comment on this document. Our team will see your feedback live and provide answers.
+      We are building a team with the culture of Empathy, Passion and Excellence.
 ---

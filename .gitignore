@@ -9,3 +9,6 @@ static/admin/*.bundle.*
 .DS_Store
 yarn-error.log
 .idea
+.tern-port
+.firebaserc
+.firebase

@@ -1,12 +1,5 @@
 {
   "hosting": {
-    "redirects": [
-      {
-        "source": "/all",
-        "destination": "https://news.ycombinator.com/",
-        "type": 301
-      }
-    ],
     "public": "public",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [

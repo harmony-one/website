@@ -301,7 +301,9 @@ export const IndexPageTemplate = ({
           </div>
           <div className="blog-posts__cta text--center">
             <a
-              href="/blog/"
+              href="https://medium.com/harmony-one/latest"
+              rel="noopener noreferrer"
+              target="_blank"
               className="outline button"
               data-g-event="blog-posts"
               data-g-label="Read more on Medium"

@@ -6,6 +6,7 @@ date: 2018-11-14T08:15:00.000Z
 tags:
   - harmony
 ---
+
 ![](/images/uploaded/0-6shjk7pzslxnyo5opng_1553626698.png)
 
 ### A team of engineers & researchers who have built global-scale infrastructure at Google, Apple, Amazon & Microsoft.
@@ -35,22 +36,6 @@ After raising a $18M round earlier this year, Harmony is recruiting Rust/Go lang
 Stephen Tse 谢镇滔 has been obsessed with protocols and compilers since high school. He reverse-engineered ICQ and X11 protocols, coded in OCaml for more than 15 years , and graduated with a doctoral degree in security protocols and compiler verification from the University of Pennsylvania.
 
 Stephen was a researcher at Microsoft Research, a senior infrastructure engineer at Google, and a principal engineer for search ranking at Apple. He founded the mobile search Spotsetter with institutional venture capital; Apple later acquired the startup.
-
-### Nicolas Burtey
-
-![](/images/uploaded/0-8ryei55sjdb0fzhljpg_1553626970.jpg)
-
-Nicolas Burtey founded a VR video startup in 2012 that grew to 40 people and raised $10m. Orah served the needs of thousands of professional content creators in 70 countries by selling GPU-driven live stitching software and 360° cameras.
-
-Nicolas holds a bachelor’s degree in mathematics and computer science, and a master’s degree in computational photography. His master’s thesis at Ecole Nationale Supérieure Louis Lumière was titled “The representation of space and time in panoramic photography.”
-
-### Alok Kothari
-
-![](/images/uploaded/0-rz-iol5affmpzk1ojpg_1553627093.jpg)
-
-Alok Kothari worked on deep learning models for natural language understanding at Apple’s Siri. He conducted research in natural language processing, information retrieval machine learning and published at top conferences like SIGIR, ICWSM and EMNLP. His research paper won the best dataset award at ICWSM 2013.
-
-Alok’s book “Game Changers” chronicles successful entrepreneurs from his alma mater IIT Kharagpur in India. He also co-founded the entrepreneurship cell there, which has produced 60 student startups. Alok obtained his master’s degree in artificial intelligence and language technologies from Carnegie Mellon University.
 
 ### Rongjian Lan
 
